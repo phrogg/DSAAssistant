@@ -1,0 +1,10 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/DieMacher" android:title="Die Macher" />
+    <item android:id="@+id/resettmp" android:title="Eig. Reseten" />
+    <item
+        android:id="@+id/update"
+        android:title="Werte Ändern" />
+    <item android:id="@+id/donate" android:title="Donate+" />
+</menu>

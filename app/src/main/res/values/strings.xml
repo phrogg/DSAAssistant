@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DSA Assistent</string>
+    <string-array name="array_stats">
+        <item>MU</item>
+        <item>KL</item>
+        <item>IN</item>
+        <item>CH</item>
+        <item>GE</item>
+        <item>GS</item>
+        <item>FF</item>
+        <item>KO</item>
+        <item>KK</item>
+        <item>SO</item>
+        <item>MR</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

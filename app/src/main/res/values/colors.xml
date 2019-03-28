@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#c9006b</color>
+
+
+    <color name="HP_4">#ff000000</color>
+    <color name="HP_3">#ff001f</color>
+    <color name="HP_2">#873080</color>
+    <color name="HP_1">#ff932d</color>
+
+    <color name="KL">#81007F</color>
+    <color name="FF">#FFFF01</color>
+    <color name="GE">#0000FE</color>
+    <color name="MU">#FE0000</color>
+    <color name="KK">#FF6501</color>
+    <color name="KO">#FFFFFF</color>
+    <color name="CH">#000000</color>
+    <color name="IN">#00FF01</color>
+
+</resources>
