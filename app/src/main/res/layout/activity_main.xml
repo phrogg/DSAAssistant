@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:text="KL:15"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/tv_s_mu"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -165,7 +165,7 @@
     <LinearLayout
         android:id="@+id/ll_buttons"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -184,8 +184,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorAccent"
+                android:contentDescription="Geldbeutel"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NestedWeights" />
 
             <ImageView
                 android:id="@+id/but_kampf"
@@ -193,6 +195,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorAccent"
+                android:contentDescription="Kampfmanagement"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
@@ -210,6 +213,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorAccent"
+                android:contentDescription="GM Werkzeuge"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/but_geld" />
 
@@ -219,6 +223,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorAccent"
+                android:contentDescription="Würfel"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/but_kampf" />
         </LinearLayout>
@@ -279,7 +284,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:maxLength="2" />
+                    android:maxLength="2"
+                    android:hint="Zahl"
+                    android:inputType="number"
+                    android:importantForAutofill="no" />
 
                 <Button
                     android:id="@+id/but_change_stat"

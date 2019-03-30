@@ -13,5 +13,36 @@
         <item>SO</item>
         <item>MR</item>
     </string-array>
-    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="Lebenspunkte">Lebenspunkte</string>
+    <string name="Wunden_Reseten">Wunden Reseten</string>
+    <string name="Die_Macher">Die Macher</string>
+    <string name="Eig_Reseten">Eig. Reseten</string>
+    <string name="Donate">Donate+</string>
+    <string name="Ideen_Feedback">Ideen/Feedback</string>
+    <string name="Wunden">Wunden</string>
+    <string name="Astralpunkte_Karma">Astralpunkte / Karma</string>
+    <string name="Astral_Karma">Astral / Karma</string>
+    <string name="werte_andaern">Werte Ändern</string>
+
+    <string name="Speichern">Speichern</string>
+    <string name="nul">0</string>
+
+
+    <string name="Mut">Mut</string>
+    <string name="Klugheit">Klugheit</string>
+    <string name="Intuition">Intuition</string>
+    <string name="Fingerfertigkeit">Fingerfertigkeit</string>
+    <string name="Gewandheit">Gewandheit</string>
+    <string name="Charisma">Charisma</string>
+    <string name="Konstitution">Konstitution</string>
+    <string name="Koerperkraft">Körperkraft</string>
+    <string name="Sozialstatus">Sozialstatus</string>
+    <string name="Magieresistenz">Magieresistenz</string>
+    <string name="Geschwindigkeit">Geschwindigkeit</string>
+
+
+
+
+    <string name="devs">Developing and UI by \nPhil Roggenbuck\nLogo Designs by\nRober Cordie</string>
 </resources>

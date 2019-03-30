@@ -1,5 +1,6 @@
 package eu.roggstar.luigithehunter.dsaassistent;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -17,6 +18,7 @@ public class ParametersActivity extends AppCompatActivity {
     TextView tv_mu, tv_kl, tv_in, tv_ch, tv_ff, tv_ge, tv_ko, tv_kk, tv_so, tv_mr, tv_gs, tv_lep, tv_ast;
     Button but_save;
 
+    @SuppressLint("CommitPrefEdits")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,13 +70,13 @@ public class ParametersActivity extends AppCompatActivity {
             setstats();
         } else {
             //Body Parts
-            mEditor.putInt("HEAD",0).commit();
-            mEditor.putInt("LL",0).commit();
-            mEditor.putInt("RL",0).commit();
-            mEditor.putInt("LA",0).commit();
-            mEditor.putInt("RA",0).commit();
-            mEditor.putInt("STOM",0).commit();
-            mEditor.putInt("AST",0).commit();
+            mEditor.putInt("HEAD",0).apply();
+            mEditor.putInt("LL",0).apply();
+            mEditor.putInt("RL",0).apply();
+            mEditor.putInt("LA",0).apply();
+            mEditor.putInt("RA",0).apply();
+            mEditor.putInt("STOM",0).apply();
+            mEditor.putInt("AST",0).apply();
         }
     }
 
@@ -145,6 +147,7 @@ public class ParametersActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Toast.makeText(this, "Nicht gespeichert!", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(ParametersActivity.this,MainActivity.class));
         finish();
     }
 }

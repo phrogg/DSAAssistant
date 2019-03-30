@@ -1,5 +1,6 @@
 package eu.roggstar.luigithehunter.dsaassistent;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner spin_stats, spin_points;
     EditText txt_points;
 
+    @SuppressLint("CommitPrefEdits")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         Glide.with(this).load(R.drawable.geld).into(but_geld);
         Glide.with(this).load(R.drawable.kampf).into(but_kampf);
         Glide.with(this).load(R.drawable.gm).into(but_gm);
-        Glide.with(this).load(R.drawable.dice).into(but_dice);
+        Glide.with(this).load(R.drawable.w20).into(but_dice);
 
         tv_s_mu = findViewById(R.id.tv_s_mu);
         tv_s_kl = findViewById(R.id.tv_s_kl);

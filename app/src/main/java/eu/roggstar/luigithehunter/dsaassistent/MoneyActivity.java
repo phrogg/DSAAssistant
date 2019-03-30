@@ -444,11 +444,11 @@ public class MoneyActivity extends AppCompatActivity {
 
     private void saveVals(){
         SharedPreferences.Editor mEditor = mPrefs.edit();
-        mEditor.putInt("DUK",sb_duk.getProgress()).commit();
-        mEditor.putInt("SIL",sb_sil.getProgress()).commit();
-        mEditor.putInt("HEL",sb_hel.getProgress()).commit();
-        mEditor.putInt("KRE",sb_kre.getProgress()).commit();
-        mEditor.putInt("SCH",sb_sch.getProgress()).commit();
+        mEditor.putInt("DUK",sb_duk.getProgress()).apply();
+        mEditor.putInt("SIL",sb_sil.getProgress()).apply();
+        mEditor.putInt("HEL",sb_hel.getProgress()).apply();
+        mEditor.putInt("KRE",sb_kre.getProgress()).apply();
+        mEditor.putInt("SCH",sb_sch.getProgress()).apply();
     }
 
     @Override

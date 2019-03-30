@@ -113,8 +113,8 @@ public class CombatActivity extends AppCompatActivity {
         but_lep_m.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                mEditor.putInt("MAX",0).commit();
-                mEditor.putInt("AMAX",-1).commit();
+                mEditor.putInt("MAX",0).apply();
+                mEditor.putInt("AMAX",-1).apply();
                 Toast.makeText(CombatActivity.this, "Success!", Toast.LENGTH_SHORT).show();
                 finish();
                 return true;

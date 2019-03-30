@@ -1,5 +1,6 @@
 package eu.roggstar.luigithehunter.dsaassistent;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -36,6 +37,7 @@ public class GMActivity extends AppCompatActivity {
     SharedPreferences mPrefs;
     SharedPreferences.Editor mEdit;
 
+    @SuppressLint("CommitPrefEdits")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,7 +120,7 @@ public class GMActivity extends AppCompatActivity {
                 tmpHash.put("ini", "0");
                 list.add(tmpHash);
             }
-            oldEdit.remove("List").commit();
+            oldEdit.remove("List").apply();
             saveMap();
         } else {
             Gson gson = new Gson();

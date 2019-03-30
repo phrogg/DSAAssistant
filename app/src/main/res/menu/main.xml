@@ -1,10 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/DieMacher" android:title="Die Macher" />
-    <item android:id="@+id/resettmp" android:title="Eig. Reseten" />
-    <item
-        android:id="@+id/update"
-        android:title="Werte Ändern" />
-    <item android:id="@+id/donate" android:title="Donate+" />
-    <item android:id="@+id/feedback" android:title="Ideen/Feedback" />
+    <item android:id="@+id/DieMacher" android:title="@string/Die_Macher" />
+    <item android:id="@+id/resettmp" android:title="@string/Eig_Reseten" />
+    <item android:id="@+id/update" android:title="@string/werte_aendern" />
+    <item android:id="@+id/donate" android:title="@string/Donate" />
+    <item android:id="@+id/feedback" android:title="@string/Ideen_Feedback" />
 </menu>
