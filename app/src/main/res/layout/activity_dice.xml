@@ -144,26 +144,16 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/ll_dices_button"
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            app:layout_constraintTop_toBottomOf="@+id/ll_dicerow_3">
 
             <TextView
                 android:id="@+id/txt_results"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:gravity="top|center"
-                android:scrollbarAlwaysDrawVerticalTrack="true"
-                android:scrollbars="vertical"
-                android:text="txt_result"
-                android:textSize="45sp" />
-        </LinearLayout>
+                android:textSize="45sp"
+                android:scrollbars = "vertical" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

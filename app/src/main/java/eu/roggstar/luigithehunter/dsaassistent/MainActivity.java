@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this,ParametersActivity.class));
         }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, getResources().getStringArray(R.array.array_stats));
+        ArrayAdapter<String> adapter = new ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, getResources().getStringArray(R.array.array_stats));
 
         spin_stats = findViewById(R.id.spin_stats);
         spin_points = findViewById(R.id.spin_points);
@@ -86,11 +86,11 @@ public class MainActivity extends AppCompatActivity {
 
         spin_stats.setAdapter(adapter);
 
-        final List<String> list=new ArrayList<String>();
+        final List<String> list=new ArrayList();
         list.add("+");
         list.add("-");
 
-        ArrayAdapter<String> adp= new ArrayAdapter<String>(this,
+        ArrayAdapter<String> adp= new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1,list);
         adp.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin_points.setAdapter(adp);
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View V) {
                         if (TextUtils.isDigitsOnly(txt_points.getText())) {
                             int value = Integer.parseInt(txt_points.getText().toString());
-                            if(spin_points.getSelectedItem().toString() == "-"){value = value*(-1);}
+                            if(spin_points.getSelectedItem().toString().equals("-")){value = value*(-1);}
                             switch (spin_stats.getSelectedItem().toString()) {
                                 case ("MU"):
                                     value += Integer.parseInt(tv_s_mu.getText().toString().substring(3, tv_s_mu.length()));
@@ -255,7 +255,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
+        Intent browserIntent;
         switch (item.getItemId()) {
             case R.id.DieMacher:
                 startActivity(new Intent(MainActivity.this,VersionActivity.class));
@@ -268,7 +268,11 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 return true;
             case R.id.donate:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.paypal.me/proggenbuck"));
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.paypal.me/proggenbuck"));
+                startActivity(browserIntent);
+                return true;
+            case R.id.feedback:
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://dsa.nolt.io"));
                 startActivity(browserIntent);
                 return true;
         }
