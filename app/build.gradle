@@ -6,7 +6,7 @@ android {
         applicationId "eu.roggstar.luigithehunter.dsaassistent"
         minSdkVersion 15
         targetSdkVersion 28 //change to 28
-        versionCode 48
+        versionCode 49
         versionName "Erebor"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
