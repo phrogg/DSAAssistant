@@ -22,9 +22,7 @@
         <activity android:name=".GMActivity" />
         <activity android:name=".DiceActivity" />
         <activity android:name=".VersionActivity" />
-        <activity
-            android:name=".ParametersActivity"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ParametersActivity" android:windowSoftInputMode="stateHidden|adjustResize" />
     </application>
 
 </manifest>
