@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/phil/MyLife/AndroidStudio/DSAAssistent/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "/home/phil/.gradle/caches/transforms-2/files-2.1/a3c34b77fc560cca2a3e5d9e4a983cfe/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                }
+            ]
+        }
+    ]
+}

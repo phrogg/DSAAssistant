@@ -1,0 +1,4 @@
+#Sun Mar 31 09:48:16 CEST 2019
+base.0=D\:\\MyLife\\AndroidStudio\\DSAAssistent\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+path.0=classes.dex
+renamed.0=classes.dex
