@@ -3,10 +3,10 @@
 Ein Helfer für das Schwarze Auge.
 
 Funktionen wie:
--Geldbeutel Manager 2.0
--Kampfszenen und Wunden Manager 1.2
--Würfeln der wichtigsten Würfel 1.0
--GM Ini Manager 1.0
+- Geldbeutel Manager 2.0
+- Kampfszenen und Wunden Manager 1.2
+- Würfeln der wichtigsten Würfel 1.0
+- GM Ini Manager 1.0
 
 Die Screenshots sind alt. Ich werde diese mal updaten.
 
