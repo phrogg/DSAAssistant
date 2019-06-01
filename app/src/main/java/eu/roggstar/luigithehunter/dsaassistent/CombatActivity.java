@@ -35,10 +35,8 @@ public class CombatActivity extends AppCompatActivity {
         but_lep_p = findViewById(R.id.but_lep_p);
         but_ast_m = findViewById(R.id.but_ast_m);
         but_ast_p = findViewById(R.id.but_ast_p);
-
         sb_lep = findViewById(R.id.sb_lep);
         sb_ast = findViewById(R.id.sb_ast);
-
         tv_lep = findViewById(R.id.tv_lep);
         tv_ast = findViewById(R.id.tv_ast);
         iv_head = findViewById(R.id.iv_head);
@@ -47,6 +45,8 @@ public class CombatActivity extends AppCompatActivity {
         iv_ll = findViewById(R.id.iv_ll);
         iv_rl = findViewById(R.id.iv_rl);
         iv_stomach = findViewById(R.id.iv_stomach);
+
+
         setTitle("Im Kampf");
 
         //Ask for Devices
