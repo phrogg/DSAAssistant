@@ -53,6 +53,7 @@ public class CombatActivity extends AppCompatActivity {
         mP_lep = getSharedPreferences("MAX", 0);
         mEditor = mP_lep.edit();
 
+
         seclr();
 
         if(mP_lep.getInt("AMAX",-1) != -2){  //define Astralpoints //TODO Maybe
