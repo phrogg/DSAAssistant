@@ -1,3 +1,7 @@
+<img src="https://img.shields.io/github/release/LuigiTheHunter/DSAAssistant.svg?logo=github" />
+<img src="https://img.shields.io/f-droid/v/eu.roggstar.luigithehunter.dsassistant.svg" />
+
+
 # DSA Assistant
 
 Ein Helfer für das Schwarze Auge.
