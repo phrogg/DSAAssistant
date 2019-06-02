@@ -274,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(browserIntent);
                 return true;
             case R.id.feedback:
-                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://dsa.nolt.io"));
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/LuigiTheHunter/DSAAssistant/issues"));
                 startActivity(browserIntent);
                 return true;
         }
