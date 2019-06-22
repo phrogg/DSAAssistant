@@ -117,6 +117,9 @@ public class MainActivity extends AppCompatActivity {
         but_change_stat.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View V) {
+                        if (txt_points.getText().toString().length() == 0){
+                            return;
+                        }
                         if (TextUtils.isDigitsOnly(txt_points.getText())) {
                             int value = Integer.parseInt(txt_points.getText().toString());
                             if(spin_points.getSelectedItem().toString().equals("-")){value = value*(-1);}
@@ -222,8 +225,8 @@ public class MainActivity extends AppCompatActivity {
                                     break;
                             }
                             txt_points.setText("");
-                            InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
-                            imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+                            //InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+                            //imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
                         } else {
                             Toast.makeText(MainActivity.this, "Huch, das ist aber zu viel des guten!", Toast.LENGTH_LONG).show();
                         }

@@ -312,7 +312,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:focusable="false"
+                android:focusable="true"
                 android:hint="@string/nummer"
                 android:importantForAutofill="no"
                 android:inputType="number"
