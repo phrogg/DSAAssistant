@@ -92,8 +92,7 @@ public class MainActivity extends AppCompatActivity {
         list.add("+");
         list.add("-");
 
-        ArrayAdapter<String> adp= new ArrayAdapter(this,
-                android.R.layout.simple_list_item_1,list);
+        ArrayAdapter<String> adp= new ArrayAdapter(this, android.R.layout.simple_list_item_1,list);
         adp.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin_points.setAdapter(adp);
 
