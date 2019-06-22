@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/github/release/LuigiTheHunter/DSAAssistant.svg?logo=github" />   <img src="https://img.shields.io/f-droid/v/eu.roggstar.luigithehunter.dsaassistent.svg" />   [![GitHub license](https://img.shields.io/github/license/LuigiTheHunter/DSAAssistant.svg)](https://github.com/LuigiTheHunter/DSAAssistant/blob/master/LICENSE)   [![GitHub issues](https://img.shields.io/github/issues/LuigiTheHunter/DSAAssistant.svg)](https://GitHub.com/LuigiTheHunter/DSAAssistant/issues/)   [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+<img src="https://img.shields.io/github/release/LuigiTheHunter/DSAAssistant.svg?logo=github" />   <img src="https://img.shields.io/f-droid/v/eu.roggstar.luigithehunter.dsaassistent.svg" />   [![GitHub license](https://img.shields.io/github/license/LuigiTheHunter/DSAAssistant.svg)](https://github.com/LuigiTheHunter/DSAAssistant/blob/master/LICENSE)   [![GitHub issues](https://img.shields.io/github/issues/LuigiTheHunter/DSAAssistant.svg)](https://GitHub.com/LuigiTheHunter/DSAAssistant/issues/)
 
 
 # DSA Assistant
