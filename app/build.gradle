@@ -6,8 +6,8 @@ android {
         applicationId "eu.roggstar.luigithehunter.dsaassistent"
         minSdkVersion 15
         targetSdkVersion 28 //change to 28
-        versionCode 49
-        versionName "Erebor"
+        versionCode 50
+        versionName "Mister English"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -22,7 +22,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar']) //compile
     implementation 'com.android.support:design:28.0.0'
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
-        //withoutimplement
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation 'com.android.support:appcompat-v7:28.0.0'
@@ -31,4 +30,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    //added for automatedscreenshots
+    androidTestImplementation 'tools.fastlane:screengrab:1.0.0'
 }

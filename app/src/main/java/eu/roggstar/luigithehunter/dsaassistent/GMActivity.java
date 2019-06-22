@@ -44,7 +44,9 @@ public class GMActivity extends AppCompatActivity {
         setContentView(R.layout.activity_gm);
 
 
-        setTitle("GameMaster Werkzeug(e)");
+        this.setTitle(R.string.TitleGM);
+
+
         lv_inititive = findViewById(R.id.lv_inititive);
 
 
@@ -178,7 +180,7 @@ public class GMActivity extends AppCompatActivity {
             }
         });
 
-        builder.setNeutralButton("Hinzufügen", new DialogInterface.OnClickListener() {
+        builder.setNeutralButton(getString(R.string.InIHinzufugenJa), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
@@ -197,7 +199,7 @@ public class GMActivity extends AppCompatActivity {
             }
         });
 
-        builder.setNegativeButton("Doch net.", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(getString(R.string.InIHinzufugenNein), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 

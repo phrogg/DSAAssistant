@@ -47,7 +47,7 @@ public class CombatActivity extends AppCompatActivity {
         iv_stomach = findViewById(R.id.iv_stomach);
 
 
-        setTitle("Im Kampf");
+        this.setTitle(R.string.TitleCombat);
 
         //Ask for Devices
         mP_lep = getSharedPreferences("MAX", 0);
@@ -61,9 +61,8 @@ public class CombatActivity extends AppCompatActivity {
             if(mP_lep.getInt("AMAX",0) != 0 && mP_lep.getInt("AMAX",0) >= 0){
                 sb_ast.setMax(mP_lep.getInt("AMAX",0));
                 sb_ast.setProgress(mP_lep.getInt("AST",0));
-                tv_ast.setText("Astralpunkte / Karma " + "(" + sb_ast.getProgress() + ")");
-                sb_ast.setVisibility(View.VISIBLE);but_ast_m.setVisibility(View.VISIBLE);but_ast_p.setVisibility(View.VISIBLE);
-                tv_ast.setVisibility(View.VISIBLE);
+                tv_ast.setText(getString(R.string.Astralpunkte_Karma) + " (" + sb_ast.getProgress() + ")");
+                sb_ast.setVisibility(View.VISIBLE);but_ast_m.setVisibility(View.VISIBLE);but_ast_p.setVisibility(View.VISIBLE);tv_ast.setVisibility(View.VISIBLE);
             }
         }
 
@@ -71,7 +70,7 @@ public class CombatActivity extends AppCompatActivity {
             sb_lep.setMax(mP_lep.getInt("MAX",0));
             sb_lep.setProgress(mP_lep.getInt("LEP",0));
             sb_lep.setProgress(mP_lep.getInt("LEP",0));
-            tv_lep.setText("Lebenspunkte " + "(" + sb_lep.getProgress() + ")");
+            tv_lep.setText(getString(R.string.Lebenspunkte) + " (" + sb_lep.getProgress() + ")");
         }
 
 
@@ -114,10 +113,13 @@ public class CombatActivity extends AppCompatActivity {
         but_lep_m.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
+                Toast.makeText(CombatActivity.this, "This was a developer function and it has been disabled now.", Toast.LENGTH_LONG).show();
+                /*
                 mEditor.putInt("MAX",0).apply();
                 mEditor.putInt("AMAX",-1).apply();
                 Toast.makeText(CombatActivity.this, "Success!", Toast.LENGTH_SHORT).show();
                 finish();
+                */
                 return true;
             }
         });
@@ -136,7 +138,7 @@ public class CombatActivity extends AppCompatActivity {
 
             @Override
             public void onProgressChanged(SeekBar arg0, int progress, boolean arg2) {
-                tv_lep.setText("Lebenspunkte (" + sb_lep.getProgress() + ")");
+                tv_lep.setText(getString(R.string.Lebenspunkte) + " (" + sb_lep.getProgress() + ")");
             }
         });
 
@@ -153,7 +155,7 @@ public class CombatActivity extends AppCompatActivity {
 
             @Override
             public void onProgressChanged(SeekBar arg0, int progress, boolean arg2) {
-                tv_ast.setText("Astralpunkte / Karma (" + sb_ast.getProgress() + ")");
+                tv_ast.setText(getString(R.string.Astralpunkte_Karma) + " (" + sb_ast.getProgress() + ")");
             }
         });
 
@@ -199,11 +201,11 @@ public class CombatActivity extends AppCompatActivity {
     public void dialog(final View v){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        builder.setTitle("Wunden Manager");
+        builder.setTitle(R.string.Wunden_Manager);
 
-        builder.setMessage("Hast du eine Wunde bekommen oder wurde eine geheilt?");
+        builder.setMessage(R.string.Wunde_NeuAlt);
 
-        builder.setPositiveButton("BEKOMMEN", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.Wunde_Neu, new DialogInterface.OnClickListener() {
 
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
@@ -211,7 +213,7 @@ public class CombatActivity extends AppCompatActivity {
             }
         });
 
-        builder.setNegativeButton("GEHEILT", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.Wunde_Alt, new DialogInterface.OnClickListener() {
 
             @Override
             public void onClick(DialogInterface dialog, int which) {

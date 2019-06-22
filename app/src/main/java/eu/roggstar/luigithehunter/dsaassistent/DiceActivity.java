@@ -25,6 +25,8 @@ public class DiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dice);
 
+        this.setTitle(R.string.TitleDice);
+
         //Start connectors
         final Button but_d3 = findViewById(R.id.but_d3);
         final Button but_d4 = findViewById(R.id.but_d4);

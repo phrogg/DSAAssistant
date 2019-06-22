@@ -55,7 +55,7 @@ public class ParametersActivity extends AppCompatActivity {
         tv_mr.setTextColor(Color.GRAY);
         tv_gs.setTextColor(Color.GRAY);
 
-        this.setTitle("Eigenschaften Setzen");
+        this.setTitle(R.string.TitleParameter);
 
         mPrefs = getSharedPreferences("STAT", 0);
         mEdit = mPrefs.edit();

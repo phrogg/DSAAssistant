@@ -30,7 +30,7 @@ public class MoneyActivity extends AppCompatActivity {
         //Ask for Devices
         mPrefs = getSharedPreferences("DUK", 0);
 
-        setTitle("Meine Geldbörse");
+        this.setTitle(R.string.TitleMoney);
 
         //Define Start Values
         

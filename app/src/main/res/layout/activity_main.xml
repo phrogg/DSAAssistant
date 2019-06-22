@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="false"
     tools:context="eu.roggstar.luigithehunter.dsaassistent.MainActivity">
 
     <LinearLayout
         android:id="@+id/ll_pp"
         android:layout_width="match_parent"
         android:layout_height="30dp"
+        android:focusable="false"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,6 +22,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="MU:15"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -39,6 +42,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="KL:15"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -50,6 +54,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="IN:15"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -62,6 +67,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="FF:15"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -73,6 +79,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="GE:15"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -85,6 +92,7 @@
         android:id="@+id/ll_sp"
         android:layout_width="match_parent"
         android:layout_height="30dp"
+        android:focusable="false"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,6 +103,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="CH:15"
             android:textAlignment="center"
             android:textSize="16sp"
@@ -106,6 +115,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="KO:15"
             android:textAlignment="center"
             android:textSize="16sp"
@@ -117,6 +127,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="KK:15"
             android:textAlignment="center"
             android:textSize="16sp"
@@ -128,6 +139,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="SO:15"
             android:textAlignment="center"
             android:textSize="16sp"
@@ -139,6 +151,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="MR:15"
             android:textAlignment="center"
             android:textSize="16sp"
@@ -150,6 +163,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:focusable="false"
             android:text="GS:15"
             android:textAlignment="center"
             android:textSize="16sp"
@@ -162,6 +176,7 @@
         android:id="@+id/ll_buttons"
         android:layout_width="match_parent"
         android:layout_height="350dp"
+        android:focusable="false"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -172,6 +187,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:focusable="false"
             android:orientation="horizontal">
 
             <ImageView
@@ -179,8 +195,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/colorAccent"
                 android:contentDescription="Geldbeutel"
+                android:focusable="false"
+                android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="NestedWeights" />
@@ -190,8 +207,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/colorAccent"
                 android:contentDescription="Kampfmanagement"
+                android:focusable="false"
+                android:textColor="@color/colorAccent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
@@ -201,6 +219,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:focusable="false"
             android:orientation="horizontal">
 
             <ImageView
@@ -208,8 +227,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/colorAccent"
                 android:contentDescription="GM Werkzeuge"
+                android:focusable="false"
+                android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/but_geld" />
 
@@ -218,8 +238,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/colorAccent"
                 android:contentDescription="Würfel"
+                android:focusable="false"
+                android:textColor="@color/colorAccent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/but_kampf" />
         </LinearLayout>
@@ -227,78 +248,92 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:id="@+id/ll_ptmp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:focusable="false"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/ll_buttons">
+
         <LinearLayout
-            android:id="@+id/ll_ptmp"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:layout_weight="1"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/border"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@+id/ll_buttons">
+            android:layout_height="45dp"
+            android:focusable="false"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:orientation="horizontal">
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent" />
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                    android:text=" Wert ändern (TMP)"
-                    android:textSize="22sp"
-                    android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:focusable="false"
+                android:text="@string/werte_aendern_tmp"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
-                <Spinner
-                    android:id="@+id/spin_stats"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:entries="@array/array_stats"
-                    android:spinnerMode="dialog" />
+            <Spinner
+                android:id="@+id/spin_stats"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:entries="@array/array_stats"
+                android:focusable="false"
+                android:spinnerMode="dialog" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <Spinner
-                    android:id="@+id/spin_points"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:entries="@array/array_stats"
-                    android:spinnerMode="dialog" />
-
-                <EditText
-                    android:id="@+id/txt_points"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:maxLength="2"
-                    android:hint="Zahl"
-                    android:inputType="number"
-                    android:importantForAutofill="no" />
-
-                <Button
-                    android:id="@+id/but_change_stat"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="Speichern"
-                    android:textSize="18sp" />
-            </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spin_points"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:entries="@array/array_stats"
+                android:focusable="false"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/txt_points"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:focusable="false"
+                android:hint="@string/nummer"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <Button
+                android:id="@+id/but_change_stat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:focusable="false"
+                android:text="@string/Speichern"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
+        android:focusable="false"
         app:layout_constraintTop_toBottomOf="@id/ll_ptmp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <!-- Spinner -->
+    <string-array name="array_stats">
+        <item>MU</item>
+        <item>KL</item>
+        <item>IN</item>
+        <item>CH</item>
+        <item>GE</item>
+        <item>GS</item>
+        <item>FF</item>
+        <item>KO</item>
+        <item>KK</item>
+        <item>SO</item>
+        <item>MR</item>
+    </string-array>
+
+    <!-- Activity Titles -->
+    <string name="TitleCombat">Kampf Manager</string>
+    <string name="TitleDice">Würfels</string>
+    <string name="TitleMoney">Geldbörse</string>
+    <string name="TitleParameter">Eigenschaften Setzen</string>
+    <string name="TitleGM">GameMaster Werkzeug(e)</string>
+
+    <!-- Misc -->
+    <string name="Lebenspunkte">Lebenspunkte</string>
+    <string name="Wunden_Reseten">Wunden Reseten</string>
+    <string name="Die_Macher">Die Macher</string>
+    <string name="Eig_Reseten">Eig. Reseten</string>
+    <string name="Donate">Donate+</string>
+    <string name="Ideen_Feedback">Ideen/Feedback</string>
+    <string name="Wunden">Wunden</string>
+    <string name="Wunden_Manager">Wunden Manager</string>
+    <string name="Wunde_NeuAlt">Hast du eine Wunde bekommen oder wurde eine geheilt?</string>
+    <string name="Wunde_Neu">Neue Wunde</string>
+    <string name="Wunde_Alt">Alte geheilt</string>
+    <string name="Astralpunkte_Karma">Astralpunkte / Karma</string>
+    <string name="Astral_Karma">Astral / Karma</string>
+    <string name="werte_aendern">Werte Ändern</string>
+    <string name="werte_aendern_tmp">Wert ändern (TMP)</string>
+    <string name="nummer">Nummer</string>
+    <string name="InIHinzufugenJa">Hinzufügen</string>
+    <string name="InIHinzufugenNein">Doch ned</string>
+    <string name="Speichern">Speichern</string>
+    <string name="nul">0</string>
+
+    <!-- Eigenschaften -->
+    <string name="Mut">Mut</string>
+    <string name="Klugheit">Klugheit</string>
+    <string name="Intuition">Intuition</string>
+    <string name="Fingerfertigkeit">Fingerfertigkeit</string>
+    <string name="Gewandheit">Gewandheit</string>
+    <string name="Charisma">Charisma</string>
+    <string name="Konstitution">Konstitution</string>
+    <string name="Koerperkraft">Körperkraft</string>
+    <string name="Sozialstatus">Sozialstatus</string>
+    <string name="Magieresistenz">Magieresistenz</string>
+    <string name="Geschwindigkeit">Geschwindigkeit</string>
+
+    <!-- Non Specific -->
+    <string name="app_name">DSA Assistent</string>
+    <string name="devs">Entwicklung und Design von \nPhil Roggenbuck\nLogos vom feinsten von \nRober Cordie</string>
+</resources>

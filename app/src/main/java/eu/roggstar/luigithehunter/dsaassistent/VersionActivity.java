@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.BuildConfig;
 import com.bumptech.glide.Glide;
 
 public class VersionActivity extends AppCompatActivity {

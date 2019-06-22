@@ -1,4 +1,5 @@
 <resources>
+    <!-- Spinner -->
     <string-array name="array_stats">
         <item>MU</item>
         <item>KL</item>
@@ -13,34 +14,49 @@
         <item>MR</item>
     </string-array>
 
+    <!-- Activity Titles -->
+    <string name="TitleCombat">Combat Manager</string>
+    <string name="TitleDice">Dices</string>
+    <string name="TitleMoney">Purse</string>
+    <string name="TitleParameter">Your attributes</string>
+    <string name="TitleGM">GameMaster Tool(s)</string>
+
     <!-- Misc -->
-    <string name="Lebenspunkte">Lebenspunkte</string>
-    <string name="Wunden_Reseten">Wunden Reseten</string>
-    <string name="Die_Macher">Die Macher</string>
-    <string name="Eig_Reseten">Eig. Reseten</string>
+    <string name="Lebenspunkte">Healthpoints</string>
+    <string name="Wunden_Reseten">Reset wounds</string>
+    <string name="Die_Macher">The Creators</string>
+    <string name="Eig_Reseten">Reset your attributes</string>
     <string name="Donate">Donate+</string>
-    <string name="Ideen_Feedback">Ideen/Feedback</string>
-    <string name="Wunden">Wunden</string>
-    <string name="Astralpunkte_Karma">Astralpunkte / Karma</string>
+    <string name="Ideen_Feedback">Ideas/Feedback</string>
+    <string name="Wunden">Wounds</string>
+    <string name="Wunden_Manager">Wound Manager</string>
+    <string name="Wunde_NeuAlt">New wound, or a healed one?</string>
+    <string name="Wunde_Neu">New wound</string>
+    <string name="Wunde_Alt">Healed</string>
+    <string name="Astralpunkte_Karma">Astralpoints / Karma</string>
     <string name="Astral_Karma">Astral / Karma</string>
-    <string name="werte_aendern">Werte Ändern</string>
-    <string name="Speichern">Speichern</string>
-    <string name="nul">0</string>
+    <string name="werte_aendern">Change values</string>
+    <string name="werte_aendern_tmp">Change value (TMP)</string>
+    <string name="nummer">Number</string>
+    <string name="Speichern">Save</string>
+    <string name="InIHinzufugenJa">Add player</string>
+    <string name="InIHinzufugenNein">Nope</string>
+    <string name="nul" translatable="false">0</string>
 
     <!-- Eigenschaften -->
-    <string name="Mut">Mut</string>
-    <string name="Klugheit">Klugheit</string>
+    <string name="Mut">Courage</string>
+    <string name="Klugheit">Sagacity</string>
     <string name="Intuition">Intuition</string>
-    <string name="Fingerfertigkeit">Fingerfertigkeit</string>
-    <string name="Gewandheit">Gewandheit</string>
+    <string name="Fingerfertigkeit">Dexterity</string>
+    <string name="Gewandheit">Address</string>
     <string name="Charisma">Charisma</string>
-    <string name="Konstitution">Konstitution</string>
-    <string name="Koerperkraft">Körperkraft</string>
-    <string name="Sozialstatus">Sozialstatus</string>
-    <string name="Magieresistenz">Magieresistenz</string>
-    <string name="Geschwindigkeit">Geschwindigkeit</string>
+    <string name="Konstitution">Constitution</string>
+    <string name="Koerperkraft">Bodily power</string>
+    <string name="Sozialstatus">Social status</string>
+    <string name="Magieresistenz">Magic resistance</string>
+    <string name="Geschwindigkeit">Veloicty</string>
 
     <!-- Non Specific -->
-    <string name="app_name" translatable="false">DSA Assistent</string>
+    <string name="app_name">DSA Assistent</string>
     <string name="devs">Developing and UI by \nPhil Roggenbuck\nLogo Designs by\nRober Cordie</string>
 </resources>
