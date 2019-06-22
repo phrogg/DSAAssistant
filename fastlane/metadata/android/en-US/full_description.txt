@@ -1,0 +1,11 @@
+The DSA Assistant is an assistant for you while playing "The Dark Eye" a german alteration to Pen and Paper.
+
+Functions:
+ - Money Manager
+ - Combat Manager
+ - Dice Roller
+ - GameMaster INI Manager
+
+Please note: Until now the whole app is just in german. I'm currently working on the english version.
+
+BUGS und IDEEN bitte hier: https://github.com/LuigiTheHunter/DSAAssistant/issues/

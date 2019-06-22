@@ -1,0 +1,13 @@
+Endlich eine neue Version!
+Mit dabei sind dieses mal:
+-Schnelleres würfeln durch kürzere Animationen.
+-3x mal Würfeln indem man den Würfel gedrückt hält.
+-Endlich kann man Scrollen
+-"Stufen Aufstieg" heißt jetzt "Werte anpassen"
+-Werte ändern, Combobox durch EditText ersetzt
+-GameMaster Werkzeuge haben nun einen INI Wert.
+
+Vielen Dank für das Feedback bitte weiter so! BTW: Diese App bleibt natürlich kostenfrei.
+
+TL;DR:
+Einfach mal auf alles drauf klicken bis es macht was man will...
