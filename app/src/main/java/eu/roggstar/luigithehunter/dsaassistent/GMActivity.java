@@ -135,7 +135,7 @@ public class GMActivity extends AppCompatActivity {
                 }
                 adapter.notifyDataSetChanged();
             } else {
-                Toast.makeText(this, "Hier kannst du deine Spieler hinzufügen und Sie werden automatisch nach Ihrer Initiative geordnet.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Hier kannst du deine Spieler hinzufügen und Sie werden automatisch nach Ihrer Initiative geordnet.", Toast.LENGTH_LONG).show();
             }
         }
     }

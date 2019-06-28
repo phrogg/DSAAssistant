@@ -1,4 +1,4 @@
-#Sat Jun 22 14:45:28 CEST 2019
+#Sat Jun 22 21:40:37 CEST 2019
 base.0=/home/phil/MyLife/AndroidStudio/DSAAssistent/app/build/intermediates/dex/release/mergeDexRelease/out
 path.0=classes.dex
 renamed.0=classes.dex
