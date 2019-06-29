@@ -6,7 +6,7 @@ android {
         applicationId "eu.roggstar.luigithehunter.dsaassistent"
         minSdkVersion 15
         targetSdkVersion 28 //change to 28
-        versionCode 51
+        versionCode 52
         versionName "Mister English"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
