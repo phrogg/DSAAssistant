@@ -1,5 +1,7 @@
 <img src="https://img.shields.io/github/release/LuigiTheHunter/DSAAssistant.svg?logo=github" />   <img src="https://img.shields.io/f-droid/v/eu.roggstar.luigithehunter.dsaassistent.svg" />   [![GitHub license](https://img.shields.io/github/license/LuigiTheHunter/DSAAssistant.svg)](https://github.com/LuigiTheHunter/DSAAssistant/blob/master/LICENSE)   [![GitHub issues](https://img.shields.io/github/issues/LuigiTheHunter/DSAAssistant.svg)](https://GitHub.com/LuigiTheHunter/DSAAssistant/issues/)<br>
 [![Tracker Badge](https://img.shields.io/badge/Tracker-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.luigithehunter.dsaassistent/)   [![Permissions Badge](https://img.shields.io/badge/Permissions-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.luigithehunter.dsaassistent/)   [![ADS Badge](https://img.shields.io/badge/ADs-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.luigithehunter.dsaassistent/)
+<br>
+[![Donate Badge](https://img.shields.io/badge/Donate-Me-green.svg)](https://paypal.me/proggenbuck)
 
 
 # DSA Assistant
