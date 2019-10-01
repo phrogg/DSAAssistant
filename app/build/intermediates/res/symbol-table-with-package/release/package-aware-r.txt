@@ -1064,6 +1064,7 @@ id Linear
 id META
 id SHIFT
 id SYM
+id aboutMe
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1148,7 +1149,6 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
-id donate
 id edit_query
 id end
 id enterAlways
@@ -1462,7 +1462,6 @@ string Astral_Karma
 string Astralpunkte_Karma
 string Charisma
 string Die_Macher
-string Donate
 string Eig_Reseten
 string Fingerfertigkeit
 string Geschwindigkeit
@@ -1529,6 +1528,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string aboutMe
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior

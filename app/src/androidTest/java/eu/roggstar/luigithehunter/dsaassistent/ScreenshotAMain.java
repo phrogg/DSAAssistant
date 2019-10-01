@@ -31,7 +31,7 @@ public class ScreenshotAMain {
 
     @Test
     public void ScreenShotMain() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         Screengrab.screenshot("1Main");
     }
 }

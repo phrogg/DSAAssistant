@@ -1,0 +1,2 @@
+eu.roggstar.luigithehunter.dsaassistent.test
+string app_name

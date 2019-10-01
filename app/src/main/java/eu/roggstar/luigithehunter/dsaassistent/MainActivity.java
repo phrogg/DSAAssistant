@@ -271,8 +271,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,ParametersActivity.class));
                 finish();
                 return true;
-            case R.id.donate:
-                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.paypal.me/proggenbuck"));
+            case R.id.aboutMe:
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.phrogg.de"));
                 startActivity(browserIntent);
                 return true;
             case R.id.feedback:

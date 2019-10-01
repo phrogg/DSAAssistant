@@ -4,7 +4,7 @@
             "outputFile": "/home/phil/MyLife/AndroidStudio/DSAAssistent/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sl/values-sl.xml",
             "map": [
                 {
-                    "source": "/home/phil/.gradle/caches/transforms-2/files-2.1/a3c34b77fc560cca2a3e5d9e4a983cfe/res/values-sl/values-sl.xml",
+                    "source": "/home/phil/.gradle/caches/transforms-2/files-2.1/549ba341c58a996323b3c14c5a416652/res/values-sl/values-sl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/phil/.gradle/caches/transforms-2/files-2.1/e3b0bf2ed2050df2e7597584342896fa/res/values-sl/values-sl.xml",
+                    "source": "/home/phil/.gradle/caches/transforms-2/files-2.1/6dccaa43ed129a4237289af61b155c22/res/values-sl/values-sl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
