@@ -1,7 +1,7 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="eu.roggstar.luigithehunter.dsaassistent"
-4    android:versionCode="53"
+4    android:versionCode="54"
 5    android:versionName="Mister English" >
 6
 7    <uses-sdk
