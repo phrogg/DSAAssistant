@@ -19,6 +19,13 @@
     <string name="Die_Macher">Die Macher</string>
     <string name="Eig_Reseten">Eig. Reseten</string>
     <string name="Fingerfertigkeit">Fingerfertigkeit</string>
+    <string name="GM_Bearbeiten">Bearbeiten</string>
+    <string name="GM_ChangeINI1">INI von</string>
+    <string name="GM_ChangeINI2">ändern</string>
+    <string name="GM_EmptyList">Hier kannst du deine Spieler hinzufügen und Sie werden automatisch nach Ihrer Initiative geordnet.</string>
+    <string name="GM_Loschen">Löschen</string>
+    <string name="GM_NewName">Neuer name für</string>
+    <string name="GM_Umbenennen">Umbenennen</string>
     <string name="Geschwindigkeit">Geschwindigkeit</string>
     <string name="Gewandheit">Gewandheit</string>
     <string name="Ideen_Feedback">Ideen/Feedback</string>
@@ -74,7 +81,7 @@
     <string name="aboutMe">Über mich</string>
     <string name="app_name">DSA Assistent</string>
     <string name="devs">Entwicklung und Design von \nPhil Roggenbuck\nLogos vom feinsten von \nRober Cordie</string>
-    <string name="nul">0</string>
+    <string name="error_toomuch">Huch, dass ist aber VERDAMMT VIEL?!"</string>
     <string name="nummer">Nummer</string>
     <string msgid="146198913615257606" name="search_menu_title">"Suchen"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>

@@ -1,7 +1,7 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="eu.roggstar.luigithehunter.dsaassistent"
-4    android:versionCode="54"
+4    android:versionCode="55"
 5    android:versionName="Mister English" >
 6
 7    <uses-sdk
@@ -34,7 +34,7 @@
 23        android:allowBackup="true"
 23-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:6:9-35
 24        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-24-->[com.android.support:support-compat:28.0.0] /home/phil/.gradle/caches/transforms-2/files-2.1/dd1cf78f22bdd94f550130b281f27c97/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+24-->[com.android.support:support-compat:28.0.0] /home/phil/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/AndroidManifest.xml:22:18-91
 25        android:debuggable="true"
 26        android:fullBackupContent="@xml/backup_descriptor"
 26-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:12:9-59
@@ -46,43 +46,44 @@
 29-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:9:9-54
 30        android:supportsRtl="true"
 30-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:10:9-35
-31        android:theme="@style/AppTheme" >
-31-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:11:9-40
-32        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.MainActivity" >
-32-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:13:9-19:20
-32-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:13:19-47
-33            <intent-filter>
-33-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:14:13-18:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:15:17-69
-34-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:15:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:17:17-77
-36-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:17:27-74
-37            </intent-filter>
-38        </activity>
-39        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.MoneyActivity" />
-39-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:20:9-51
-39-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:20:19-48
-40        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.CombatActivity" />
-40-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:21:9-52
-40-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:21:19-49
-41        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.GMActivity" />
-41-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:22:9-48
-41-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:22:19-45
-42        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.DiceActivity" />
-42-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:23:9-50
-42-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:23:19-47
-43        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.VersionActivity" />
-43-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:24:9-53
-43-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:24:19-50
-44        <activity
-44-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:25:9-111
-45            android:name="eu.roggstar.luigithehunter.dsaassistent.ParametersActivity"
-45-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:25:19-53
-46            android:windowSoftInputMode="stateHidden|adjustResize" />
-46-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:25:54-108
-47    </application>
-48
-49</manifest>
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme" >
+32-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:11:9-40
+33        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.MainActivity" >
+33-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:13:9-19:20
+33-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:13:19-47
+34            <intent-filter>
+34-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:14:13-18:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:15:17-69
+35-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:15:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:17:17-77
+37-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:17:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.MoneyActivity" />
+40-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:20:9-51
+40-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:20:19-48
+41        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.CombatActivity" />
+41-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:21:9-52
+41-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:21:19-49
+42        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.GMActivity" />
+42-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:22:9-48
+42-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:22:19-45
+43        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.DiceActivity" />
+43-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:23:9-50
+43-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:23:19-47
+44        <activity android:name="eu.roggstar.luigithehunter.dsaassistent.VersionActivity" />
+44-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:24:9-53
+44-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:24:19-50
+45        <activity
+45-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:25:9-111
+46            android:name="eu.roggstar.luigithehunter.dsaassistent.ParametersActivity"
+46-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:25:19-53
+47            android:windowSoftInputMode="stateHidden|adjustResize" />
+47-->/home/phil/MyLife/AndroidStudio/DSAAssistent/app/src/main/AndroidManifest.xml:25:54-108
+48    </application>
+49
+50</manifest>

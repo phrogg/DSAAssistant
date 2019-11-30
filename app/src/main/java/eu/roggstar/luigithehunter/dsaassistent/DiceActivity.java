@@ -1,5 +1,6 @@
 package eu.roggstar.luigithehunter.dsaassistent;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.SystemClock;
@@ -93,15 +94,16 @@ public class DiceActivity extends AppCompatActivity {
         {
             public void onAnimationEnd(Animation animation) {}
             public void onAnimationRepeat(Animation animation) {}
+            @SuppressLint("SetTextI18n")
             public void onAnimationStart(Animation animation) {
                 for (int j = 0; j < jclick; j++) {
                     rand.nextInt(10);
                     rand.nextInt(10);
                     rand.nextInt(10);
                     if (i == 1010) {
-                        txt_results.setText("D:1010:" + String.valueOf((rand.nextInt(10) + 1) * 10) + "\n" + txt_results.getText());
+                        txt_results.setText("D10:\t" + (rand.nextInt(10) + 1) * 10 + "\n" + txt_results.getText());
                     } else {
-                        txt_results.setText("D"+i+":" + String.valueOf(rand.nextInt(i) + 1) + "\n" + txt_results.getText());
+                        txt_results.setText("D"+i+":\t" + rand.nextInt(i) + 1 + "\n" + txt_results.getText());
                     }
                 }
             }

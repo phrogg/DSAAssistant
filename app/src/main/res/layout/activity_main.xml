@@ -27,7 +27,8 @@
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
 
         <!--<Space
             android:id="@+id/sp_mu_kl"
@@ -47,7 +48,8 @@
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/tv_s_mu"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/tv_s_in"
@@ -60,7 +62,21 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/tv_s_ff"
             app:layout_constraintStart_toEndOf="@+id/tv_s_kl"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/tv_s_ch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="CH:15"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_s_mu"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/tv_s_ff"
@@ -72,19 +88,8 @@
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/tv_s_ge"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tv_s_ge"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:focusable="false"
-            android:text="GE:15"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText"/>
 
     </LinearLayout>
 
@@ -99,16 +104,17 @@
         app:layout_constraintTop_toBottomOf="@id/ll_pp">
 
         <TextView
-            android:id="@+id/tv_s_ch"
+            android:id="@+id/tv_s_ge"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:focusable="false"
-            android:text="CH:15"
+            android:text="GE:15"
             android:textAlignment="center"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_mu" />
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText"/>
 
         <TextView
             android:id="@+id/tv_s_ko"
@@ -120,7 +126,8 @@
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/tv_s_ch"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_kl" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_s_kl"
+            tools:ignore="HardcodedText"/>
 
         <TextView
             android:id="@+id/tv_s_kk"
@@ -132,7 +139,8 @@
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/tv_s_ko"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_in" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_s_in"
+            tools:ignore="HardcodedText"/>
 
         <TextView
             android:id="@+id/tv_s_so"
@@ -144,7 +152,8 @@
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/tv_s_mr"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_ff" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_s_ff"
+            tools:ignore="HardcodedText"/>
 
         <TextView
             android:id="@+id/tv_s_mr"
@@ -156,7 +165,8 @@
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/tv_s_gs"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_ff" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_s_ff"
+            tools:ignore="HardcodedText"/>
 
         <TextView
             android:id="@+id/tv_s_gs"
@@ -168,7 +178,8 @@
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_ge" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_s_ge"
+            tools:ignore="HardcodedText"/>
 
     </LinearLayout>
 
@@ -195,7 +206,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:contentDescription="Geldbeutel"
+                android:contentDescription="@string/TitleMoney"
                 android:focusable="false"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -207,7 +218,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:contentDescription="Kampfmanagement"
+                android:contentDescription="@string/TitleCombat"
                 android:focusable="false"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -227,7 +238,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:contentDescription="GM Werkzeuge"
+                android:contentDescription="@string/TitleGM"
                 android:focusable="false"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -238,7 +249,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:contentDescription="Würfel"
+                android:contentDescription="@string/TitleDice"
                 android:focusable="false"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintRight_toRightOf="parent"

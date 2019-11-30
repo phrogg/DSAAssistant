@@ -557,7 +557,14 @@
     <string name="Die_Macher">The Creators</string>
     <string name="Eig_Reseten">Reset your attributes</string>
     <string name="Fingerfertigkeit">Dexterity</string>
-    <string name="Geschwindigkeit">Veloicty</string>
+    <string name="GM_Bearbeiten">Edit</string>
+    <string name="GM_ChangeINI1">Change INI from</string>
+    <string name="GM_ChangeINI2"/>
+    <string name="GM_EmptyList">Here you can add players and they will be automatically sorted by there Initiative.</string>
+    <string name="GM_Loschen">Delete</string>
+    <string name="GM_NewName">New name for</string>
+    <string name="GM_Umbenennen">Rename</string>
+    <string name="Geschwindigkeit">Velocity</string>
     <string name="Gewandheit">Address</string>
     <string name="Ideen_Feedback">Ideas/Feedback</string>
     <string name="InIHinzufugenJa">Add player</string>
@@ -628,6 +635,7 @@
     <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="devs">Developing and UI by \nPhil Roggenbuck\nLogo Designs by\nRober Cordie</string>
+    <string name="error_toomuch">Puhh, this is waaay too much isn\'t it?!</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">android.support.design.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">android.support.design.transformation.FabTransformationSheetBehavior</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">android.support.design.behavior.HideBottomViewOnScrollBehavior</string>

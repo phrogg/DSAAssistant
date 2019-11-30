@@ -41,7 +41,17 @@
     <string name="InIHinzufugenJa">Hinzufügen</string>
     <string name="InIHinzufugenNein">Doch ned</string>
     <string name="Speichern">Speichern</string>
-    <string name="nul">0</string>
+
+    <string name="GM_Bearbeiten">Bearbeiten</string>
+    <string name="GM_Umbenennen">Umbenennen</string>
+    <string name="GM_Loschen">Löschen</string>
+    <string name="GM_ChangeINI1">INI von</string>
+    <string name="GM_ChangeINI2">ändern</string>
+    <string name="GM_NewName">Neuer name für</string>
+    <string name="GM_EmptyList">Hier kannst du deine Spieler hinzufügen und Sie werden automatisch nach Ihrer Initiative geordnet.</string>
+
+
+    <string name="error_toomuch">Huch, dass ist aber VERDAMMT VIEL?!"</string>
 
     <!-- Eigenschaften -->
     <string name="Mut">Mut</string>

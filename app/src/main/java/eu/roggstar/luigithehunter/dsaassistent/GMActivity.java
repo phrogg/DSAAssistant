@@ -95,8 +95,8 @@ public class GMActivity extends AppCompatActivity {
                 currItem = list.get(i);
                 nextItem = list.get(i + 1);
 
-                if (Integer.parseInt(nextItem.get("ini")) > Integer.parseInt(currItem.get("ini"))) {
-                    list.get(i);
+                if(nextItem.get("ini") != null || currItem.get("ini") != null && Integer.parseInt(nextItem.get("ini")) > Integer.parseInt(currItem.get("ini"))) {
+                    //list.get(i);
                     list.set(i + 1, currItem); //TODO
                     list.set(i,nextItem);
                     i = -1;
@@ -111,10 +111,10 @@ public class GMActivity extends AppCompatActivity {
         SharedPreferences.Editor oldEdit;
         oldPrefs = getSharedPreferences("STAT",0);
         oldEdit = oldPrefs.edit();
-        HashMap<String,String> tmpHash = new HashMap();
+        HashMap<String,String> tmpHash = new HashMap(); //HashMap<String,String> tmpHash = new HashMap();
 
         Set<String> fetch = oldPrefs.getStringSet("List", null);
-        if(fetch != null) {
+        if(fetch != null) { //TODO delete in the future this is too old (thats why it is also not translated)
             Toast.makeText(this, "Deine Charaktere werden von der alten zur neuen Liste konvertiert.", Toast.LENGTH_LONG).show();
             Toast.makeText(this, "Deswegen haben alle die INI 0. Einfach antippen um dies zu ändern.", Toast.LENGTH_LONG).show();
             for (String str : fetch) {
@@ -130,12 +130,14 @@ public class GMActivity extends AppCompatActivity {
             }.getType();
             ArrayList<HashMap<String, String>> tmp = gson.fromJson(mPrefs.getString("IniList", null), type);
             if (tmp != null) {
+
                 for (int i = 0; i < tmp.size(); i++) {
                     list.add(tmp.get(i));
                 }
+
                 adapter.notifyDataSetChanged();
             } else {
-                Toast.makeText(this, "Hier kannst du deine Spieler hinzufügen und Sie werden automatisch nach Ihrer Initiative geordnet.", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getString(R.string.GM_EmptyList), Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -172,11 +174,16 @@ public class GMActivity extends AppCompatActivity {
         two.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 // If the event is a key-down event on the "enter" button
-                if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
-                        (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                return (event.getAction() == KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER);
+
+
+                /*
+                if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     return true;
                 }
                 return false;
+                 */
             }
         });
 
@@ -184,11 +191,11 @@ public class GMActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
-                Boolean wantToCloseDialog = (one.getText().toString().trim().isEmpty());
-                Boolean wantToCloseDialog2 = (two.getText().toString().trim().isEmpty());
+                boolean wantToCloseDialog = (one.getText().toString().trim().isEmpty()); //Bolean
+                boolean wantToCloseDialog2 = (two.getText().toString().trim().isEmpty());
 
                 if (!wantToCloseDialog && !wantToCloseDialog2) {
-                    HashMap<String,String> temp = new HashMap<String,String>();
+                    HashMap<String,String> temp = new HashMap<>();
                     temp.put("name", one.getText().toString());
                     temp.put("ini", two.getText().toString());
 
@@ -213,7 +220,7 @@ public class GMActivity extends AppCompatActivity {
 
     private void rendialog(final int pos){
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Neuer Name für "+list.get(pos).get("name"));
+        builder.setTitle(getString(R.string.GM_NewName)+" "+list.get(pos).get("name"));
         builder.setCancelable(false);
 
         final EditText input = new EditText(this);
@@ -222,18 +229,14 @@ public class GMActivity extends AppCompatActivity {
 
         input.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
-                        (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                    return true;
-                }
-                return false;
+                return (event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER);
             }
         });
 
         builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Boolean wantToCloseDialog = (input.getText().toString().trim().isEmpty());
+                boolean wantToCloseDialog = (input.getText().toString().trim().isEmpty());
                 if (!wantToCloseDialog) {
                     renameItemInList(pos,input.getText().toString(),false);
                 }
@@ -246,16 +249,16 @@ public class GMActivity extends AppCompatActivity {
     private void miscdialog(final int pos) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        builder.setTitle("Bearbeiten");
+        builder.setTitle(getString(R.string.GM_Bearbeiten));
         builder.setMessage(list.get(pos).get("name"));
-        builder.setPositiveButton("Umbennen", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(getString(R.string.GM_Umbenennen), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 rendialog(pos);
                 dialog.dismiss();
             }
         });
 
-        builder.setNegativeButton("Löschen", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(getString(R.string.GM_Loschen), new DialogInterface.OnClickListener() {
 
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -275,7 +278,7 @@ public class GMActivity extends AppCompatActivity {
     }
 
     private void renameItemInList(final int pos,final String name,boolean ini){
-        HashMap<String,String> tmp = new HashMap<String,String>();
+        HashMap<String,String> tmp = new HashMap<>();
         if(!ini){tmp.put("name",name);tmp.put("ini",list.get(pos).get("ini"));}else{tmp.put("name",list.get(pos).get("name"));tmp.put("ini",name);}
         list.set(pos,tmp);
         adapter.notifyDataSetChanged();
@@ -286,7 +289,7 @@ public class GMActivity extends AppCompatActivity {
 
    private  void movedialog(final int pos) {
        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-       builder.setTitle("INI von "+list.get(pos).get("name")+" ändern");
+       builder.setTitle(getString(R.string.GM_ChangeINI1)+" "+list.get(pos).get("name")+" "+getString(R.string.GM_ChangeINI2));
        builder.setCancelable(false);
 
        final EditText input = new EditText(this);
@@ -295,23 +298,19 @@ public class GMActivity extends AppCompatActivity {
 
        input.setOnKeyListener(new View.OnKeyListener() {
            public boolean onKey(View v, int keyCode, KeyEvent event) {
-               if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
-                       (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                   return true;
-               }
-               return false;
+               return (event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER);
            }
        });
 
        builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
            @Override
            public void onClick(DialogInterface dialog, int which) {
-               Boolean wantToCloseDialog = (input.getText().toString().trim().isEmpty());
+               boolean wantToCloseDialog = (input.getText().toString().trim().isEmpty());
                if (!wantToCloseDialog) {
                    if(TextUtils.isDigitsOnly(input.getText())) {
                        renameItemInList(pos, input.getText().toString(), true);
                    } else {
-                       Toast.makeText(GMActivity.this, "Huch, dass ist aber VERDAMMT VIEL?!", Toast.LENGTH_LONG).show();
+                       Toast.makeText(GMActivity.this, getString(R.string.error_toomuch), Toast.LENGTH_LONG).show();
                    }
                }
            }

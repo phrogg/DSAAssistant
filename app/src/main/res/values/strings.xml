@@ -54,9 +54,17 @@
     <string name="Koerperkraft">Bodily power</string>
     <string name="Sozialstatus">Social status</string>
     <string name="Magieresistenz">Magic resistance</string>
-    <string name="Geschwindigkeit">Veloicty</string>
+    <string name="Geschwindigkeit">Velocity</string>
 
     <!-- Non Specific -->
     <string name="app_name">DSA Assistent</string>
     <string name="devs">Developing and UI by \nPhil Roggenbuck\nLogo Designs by\nRober Cordie</string>
+    <string name="GM_Bearbeiten">Edit</string>
+    <string name="GM_ChangeINI1">Change INI from</string>
+    <string name="GM_ChangeINI2"></string>
+    <string name="GM_EmptyList">Here you can add players and they will be automatically sorted by there Initiative.</string>
+    <string name="GM_Loschen">Delete</string>
+    <string name="GM_NewName">New name for</string>
+    <string name="GM_Umbenennen">Rename</string>
+    <string name="error_toomuch">Puhh, this is waaay too much isn\'t it?!</string>
 </resources>

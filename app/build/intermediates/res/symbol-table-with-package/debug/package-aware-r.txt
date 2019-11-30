@@ -1464,6 +1464,13 @@ string Charisma
 string Die_Macher
 string Eig_Reseten
 string Fingerfertigkeit
+string GM_Bearbeiten
+string GM_ChangeINI1
+string GM_ChangeINI2
+string GM_EmptyList
+string GM_Loschen
+string GM_NewName
+string GM_Umbenennen
 string Geschwindigkeit
 string Gewandheit
 string Ideen_Feedback
@@ -1535,6 +1542,7 @@ string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
 string devs
+string error_toomuch
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
