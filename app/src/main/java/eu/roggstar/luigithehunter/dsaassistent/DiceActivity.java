@@ -103,7 +103,7 @@ public class DiceActivity extends AppCompatActivity {
                     if (i == 1010) {
                         txt_results.setText("D10:\t" + (rand.nextInt(10) + 1) * 10 + "\n" + txt_results.getText());
                     } else {
-                        txt_results.setText("D"+i+":\t" + rand.nextInt(i) + 1 + "\n" + txt_results.getText());
+                        txt_results.setText("D"+i+":\t" + (rand.nextInt(i) + 1) + "\n" + txt_results.getText());
                     }
                 }
             }
