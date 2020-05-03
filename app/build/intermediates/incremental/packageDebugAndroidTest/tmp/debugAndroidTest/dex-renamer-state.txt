@@ -1,4 +1,0 @@
-#Tue Oct 01 08:41:24 CEST 2019
-base.0=/home/phil/MyLife/AndroidStudio/DSAAssistent/app/build/intermediates/dex/debugAndroidTest/mergeDexDebugAndroidTest/out/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
