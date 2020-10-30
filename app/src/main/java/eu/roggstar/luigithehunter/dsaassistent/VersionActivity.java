@@ -1,7 +1,7 @@
 package eu.roggstar.luigithehunter.dsaassistent;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.BuildConfig;
+//import com.bumptech.glide.BuildConfig;
 import com.bumptech.glide.Glide;
 
 public class VersionActivity extends AppCompatActivity {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -73,7 +73,7 @@
             android:focusable="false"
             android:text="CH:15"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_mu"
             tools:ignore="HardcodedText" />
@@ -124,7 +124,7 @@
             android:focusable="false"
             android:text="KO:15"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/tv_s_ch"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_kl"
             tools:ignore="HardcodedText"/>
@@ -137,7 +137,7 @@
             android:focusable="false"
             android:text="KK:15"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/tv_s_ko"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_in"
             tools:ignore="HardcodedText"/>
@@ -150,7 +150,7 @@
             android:focusable="false"
             android:text="SO:15"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/tv_s_mr"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_ff"
             tools:ignore="HardcodedText"/>
@@ -163,7 +163,7 @@
             android:focusable="false"
             android:text="MR:15"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/tv_s_gs"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_ff"
             tools:ignore="HardcodedText"/>
@@ -176,7 +176,7 @@
             android:focusable="false"
             android:text="GS:15"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_ge"
             tools:ignore="HardcodedText"/>
@@ -276,7 +276,7 @@
             android:focusable="false"
             android:orientation="horizontal">
 
-            <android.support.v4.widget.Space
+            <androidx.legacy.widget.Space
                 android:layout_width="0dp"
                 android:layout_weight="0.2"
                 android:layout_height="match_parent" />
@@ -347,4 +347,4 @@
         android:focusable="false"
         app:layout_constraintTop_toBottomOf="@id/ll_ptmp" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
