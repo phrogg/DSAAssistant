@@ -38,6 +38,10 @@
                     android:text="@string/Mut"
                     android:textColor="@color/HP_1"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="244dp" />
 
@@ -61,6 +65,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="244dp"
                     android:importantForAutofill="no" />
@@ -88,6 +96,10 @@
                     android:text="@string/Klugheit"
                     android:textColor="@android:color/holo_blue_dark"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="291dp" />
 
@@ -111,6 +123,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="292dp" />
 
@@ -138,6 +154,10 @@
                     android:text="@string/Intuition"
                     android:textColor="@android:color/holo_green_dark"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="331dp" />
 
@@ -161,6 +181,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="332dp" />
 
@@ -183,12 +207,15 @@
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="end"
-                    android:paddingTop="4dp"
                     android:paddingRight="4dp"
                     android:paddingLeft="4dp"
                     android:text="@string/Fingerfertigkeit"
                     android:textColor="@android:color/holo_red_dark"
-                    android:textSize="25sp"
+                    android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="374dp" />
 
@@ -212,6 +239,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="376dp" />
 
@@ -239,6 +270,10 @@
                     android:text="@string/Gewandheit"
                     android:textColor="@android:color/darker_gray"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="422dp" />
 
@@ -262,6 +297,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="424dp" />
 
@@ -289,6 +328,10 @@
                     android:text="@string/Charisma"
                     android:textColor="@android:color/background_dark"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="474dp" />
 
@@ -312,6 +355,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="475dp" />
 
@@ -339,6 +386,10 @@
                     android:text="@string/Konstitution"
                     android:textColor="@android:color/holo_purple"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="530dp" />
 
@@ -362,6 +413,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="531dp" />
 
@@ -388,6 +443,10 @@
                     android:text="@string/Koerperkraft"
                     android:textColor="@android:color/holo_orange_light"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="590dp" />
 
@@ -411,6 +470,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="590dp" />
 
@@ -437,6 +500,10 @@
                     android:text="@string/Sozialstatus"
                     android:textColor="@android:color/holo_blue_light"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="654dp" />
 
@@ -460,6 +527,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="654dp" />
 
@@ -481,12 +552,15 @@
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="end"
-                    android:paddingTop="4dp"
                     android:paddingRight="4dp"
                     android:paddingLeft="4dp"
                     android:text="@string/Magieresistenz"
                     android:textColor="@android:color/holo_green_light"
-                    android:textSize="25sp"
+                    android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="393dp" />
 
@@ -510,6 +584,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="393dp" />
 
@@ -531,12 +609,15 @@
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="end"
-                    android:paddingTop="4dp"
                     android:paddingRight="4dp"
                     android:text="@string/Geschwindigkeit"
                     android:paddingLeft="4dp"
                     android:textColor="@android:color/holo_red_light"
-                    android:textSize="23sp"
+                    android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="457dp" />
 
@@ -560,6 +641,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="346dp"
                     tools:layout_editor_absoluteY="457dp" />
 
@@ -595,6 +680,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="173dp"
                     tools:layout_editor_absoluteY="521dp" />
 
@@ -609,12 +698,15 @@
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="start"
-                    android:paddingTop="4dp"
                     android:paddingRight="4dp"
                     android:text="@string/Lebenspunkte"
                     android:paddingLeft="4dp"
                     android:textColor="@color/colorAccent"
-                    android:textSize="23sp"
+                    android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="417dp"
                     tools:layout_editor_absoluteY="521dp" />
 
@@ -644,6 +736,10 @@
                     android:padding="0dp"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="173dp"
                     tools:layout_editor_absoluteY="564dp" />
 
@@ -660,12 +756,15 @@
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:gravity="start"
-                    android:paddingTop="4dp"
                     android:paddingRight="4dp"
                     android:paddingLeft="4dp"
                     android:text="@string/Astral_Karma"
                     android:textColor="@color/colorAccent"
-                    android:textSize="25sp"
+                    android:textSize="30sp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="35sp"
+                    android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="417dp"
                     tools:layout_editor_absoluteY="564dp" />
             </LinearLayout>

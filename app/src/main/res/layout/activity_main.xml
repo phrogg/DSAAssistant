@@ -26,9 +26,14 @@
             android:text="MU:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:gravity="center_horizontal" />
 
         <!--<Space
             android:id="@+id/sp_mu_kl"
@@ -47,6 +52,10 @@
             android:text="KL:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintStart_toEndOf="@+id/tv_s_mu"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="HardcodedText" />
@@ -60,6 +69,10 @@
             android:text="IN:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintEnd_toStartOf="@+id/tv_s_ff"
             app:layout_constraintStart_toEndOf="@+id/tv_s_kl"
             app:layout_constraintTop_toTopOf="parent"
@@ -74,6 +87,10 @@
             android:text="CH:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_mu"
             tools:ignore="HardcodedText" />
@@ -87,6 +104,10 @@
             android:text="FF:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintEnd_toStartOf="@+id/tv_s_ge"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="HardcodedText"/>
@@ -112,6 +133,10 @@
             android:text="GE:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="HardcodedText"/>
@@ -125,6 +150,10 @@
             android:text="KO:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintStart_toEndOf="@+id/tv_s_ch"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_kl"
             tools:ignore="HardcodedText"/>
@@ -138,6 +167,10 @@
             android:text="KK:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintStart_toEndOf="@+id/tv_s_ko"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_in"
             tools:ignore="HardcodedText"/>
@@ -151,6 +184,10 @@
             android:text="SO:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintEnd_toStartOf="@+id/tv_s_mr"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_ff"
             tools:ignore="HardcodedText"/>
@@ -164,6 +201,10 @@
             android:text="MR:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintEnd_toStartOf="@+id/tv_s_gs"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_ff"
             tools:ignore="HardcodedText"/>
@@ -177,6 +218,10 @@
             android:text="GS:15"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_s_ge"
             tools:ignore="HardcodedText"/>
@@ -276,7 +321,7 @@
             android:focusable="false"
             android:orientation="horizontal">
 
-            <androidx.legacy.widget.Space
+            <Space
                 android:layout_width="0dp"
                 android:layout_weight="0.2"
                 android:layout_height="match_parent" />
@@ -289,6 +334,10 @@
                 android:focusable="false"
                 android:text="@string/werte_aendern_tmp"
                 android:textSize="22sp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeStepGranularity="2sp"
                 android:textStyle="bold" />
 
             <Spinner
