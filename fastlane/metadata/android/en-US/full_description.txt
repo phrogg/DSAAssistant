@@ -1,11 +1,15 @@
-The DSA Assistant is an assistant for you while playing "The Dark Eye" a german alteration to Pen and Paper.
+Used with permission from the very friendly Ulisses-us.com.
 
-Functions:
- - Money Manager
- - Combat Manager
- - Dice Roller
- - GameMaster INI Manager
+This is a privacy friendly app without any trackers or permissions: https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.luigithehunter.dsaassistent/
 
-Please note: Until now the whole app is just in german. I'm currently working on the english version.
+A helper for the Black Eye.
 
-BUGS und IDEEN bitte hier: https://github.com/LuigiTheHunter/DSAAssistant/issues/
+Features like:
+-Moneybag Manager 2.0
+-Fight scenes and wounds manager 1.2
+-Cube Manager 1.0
+-GM Ini Manager 1.0
+
+The screenshots are old. I will update them sometime!
+
+BUGS and IDEAS please here: https://github.com/phrogg/DSAAssistant/issues/

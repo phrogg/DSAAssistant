@@ -55,10 +55,13 @@
     <string name="Sozialstatus">Social status</string>
     <string name="Magieresistenz">Magic res.</string>
     <string name="Geschwindigkeit">Velocity</string>
+    <string name="Gespeichert">Saved!</string>
+    <string name="NichtGespeichert">Not saved!</string>
+    <string name="AllesAusfuellen">Not everything is filled!</string>
 
     <!-- Non Specific -->
     <string name="app_name">DSA Assistent</string>
-    <string name="devs">Developing and UI by \nPhil Roggenbuck\nLogo Designs by\nRober Cordie</string>
+    <string name="devs">Developing and UI by \n<b>Phil Roggenbuck</b>\nLogo Designs by\n<b>Rober Cordie</b>\nWith a very friendly approval of\n<b>Ulisses-us.com</b></string>
     <string name="GM_Bearbeiten">Edit</string>
     <string name="GM_ChangeINI1">Change INI from</string>
     <string name="GM_ChangeINI2"></string>
@@ -67,4 +70,5 @@
     <string name="GM_NewName">New name for</string>
     <string name="GM_Umbenennen">Rename</string>
     <string name="error_toomuch">Puhh, this is waaay too much isn\'t it?!</string>
+    <string name="ulisses">Copyright</string>
 </resources>

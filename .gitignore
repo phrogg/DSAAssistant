@@ -43,3 +43,7 @@ output.json
 *.jks
 
 DSAAssistent.zip
+
+app/release/
+
+fastlane/report.xml

@@ -5,4 +5,5 @@
     <item android:id="@+id/update" android:title="@string/werte_aendern" />
     <item android:id="@+id/aboutMe" android:title="@string/aboutMe" />
     <item android:id="@+id/feedback" android:title="@string/Ideen_Feedback" />
+    <item android:id="@+id/ulisses" android:title="@string/ulisses" />
 </menu>

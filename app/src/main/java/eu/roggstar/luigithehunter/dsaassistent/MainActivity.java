@@ -277,6 +277,10 @@ public class MainActivity extends AppCompatActivity {
                 browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/LuigiTheHunter/DSAAssistant/issues"));
                 startActivity(browserIntent);
                 return true;
+            case R.id.ulisses:
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://ulisses-spiele.de"));
+                startActivity(browserIntent);
+                return true;
         }
         return false;
     }

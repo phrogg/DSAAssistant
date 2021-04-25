@@ -124,7 +124,7 @@ public class ParametersActivity extends AppCompatActivity {
 
 
         startActivity(new Intent(ParametersActivity.this,MainActivity.class));
-        Toast.makeText(this, "Gespeichert!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.Gespeichert), Toast.LENGTH_LONG).show();
         finish();
     }
 
@@ -137,7 +137,7 @@ public class ParametersActivity extends AppCompatActivity {
         for(int i=0; i < textViewIDs.length; i++) {
             TextView tv = findViewById(textViewIDs[i]);
             if(tv.getText().toString().equals("0") || tv.getText().toString().isEmpty()){
-                Toast.makeText(this, "Erst alles ausfüllen!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.AllesAusfuellen), Toast.LENGTH_LONG).show();
                 return;
             }
         }
@@ -146,7 +146,7 @@ public class ParametersActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "Nicht gespeichert!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.NichtGespeichert), Toast.LENGTH_LONG).show();
         startActivity(new Intent(ParametersActivity.this,MainActivity.class));
         finish();
     }

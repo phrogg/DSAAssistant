@@ -65,8 +65,12 @@
     <string name="Sozialstatus">Sozialstatus</string>
     <string name="Magieresistenz">Magieresistenz</string>
     <string name="Geschwindigkeit">Geschwindigkeit</string>
+    <string name="Gespeichert">Gespeichert!</string>
+    <string name="NichtGespeichert">Nicht gespeichert!</string>
+    <string name="AllesAusfuellen">Erst alles ausfüllen!</string>
 
     <!-- Non Specific -->
     <string name="app_name">DSA Assistent</string>
-    <string name="devs">Entwicklung und Design von \nPhil Roggenbuck\nLogos vom feinsten von \nRober Cordie</string>
+    <string name="devs">Entwicklung und Design von\n<b>Phil Roggenbuck</b>\nLogos vom feinsten von \n<b>Rober Cordie</b>\nMit freundlicher Genehmigung von\n<b>Ulisses-Spiele.de</b></string>
+    <string name="ulisses">Copyright</string>
 </resources>
