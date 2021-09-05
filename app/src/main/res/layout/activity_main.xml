@@ -6,9 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusable="false"
@@ -32,15 +30,15 @@
             android:focusable="false"
             android:text="MU:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="HardcodedText"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:clickable="true" />
 
         <!--<Space
             android:id="@+id/sp_mu_kl"
@@ -58,14 +56,14 @@
             android:focusable="false"
             android:text="KL:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintStart_toEndOf="@+id/tv_s_mu"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:clickable="true" />
 
         <TextView
             android:id="@+id/tv_s_in"
@@ -75,14 +73,12 @@
             android:focusable="false"
             android:text="IN:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintEnd_toStartOf="@+id/tv_s_ff"
-            app:layout_constraintStart_toEndOf="@+id/tv_s_kl"
-            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="HardcodedText"/>
 
         <TextView
@@ -93,13 +89,12 @@
             android:focusable="false"
             android:text="CH:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_mu"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -110,13 +105,12 @@
             android:focusable="false"
             android:text="FF:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintEnd_toStartOf="@+id/tv_s_ge"
-            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="HardcodedText"/>
 
     </LinearLayout>
@@ -139,13 +133,12 @@
             android:focusable="false"
             android:text="GE:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="HardcodedText"/>
 
         <TextView
@@ -156,13 +149,12 @@
             android:focusable="false"
             android:text="KO:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintStart_toEndOf="@+id/tv_s_ch"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_kl"
             tools:ignore="HardcodedText"/>
 
         <TextView
@@ -173,13 +165,12 @@
             android:focusable="false"
             android:text="KK:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintStart_toEndOf="@+id/tv_s_ko"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_in"
             tools:ignore="HardcodedText"/>
 
         <TextView
@@ -190,13 +181,12 @@
             android:focusable="false"
             android:text="SO:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintEnd_toStartOf="@+id/tv_s_mr"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_ff"
             tools:ignore="HardcodedText"/>
 
         <TextView
@@ -207,13 +197,12 @@
             android:focusable="false"
             android:text="MR:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintEnd_toStartOf="@+id/tv_s_gs"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_ff"
             tools:ignore="HardcodedText"/>
 
         <TextView
@@ -224,13 +213,12 @@
             android:focusable="false"
             android:text="GS:15"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textSize="0sp"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeStepGranularity="2sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_s_ge"
             tools:ignore="HardcodedText"/>
 
     </LinearLayout>
@@ -239,6 +227,7 @@
         android:id="@+id/ll_buttons"
         android:layout_width="match_parent"
         android:layout_height="350dp"
+        android:layout_marginTop="20dp"
         android:focusable="false"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -258,8 +247,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/geld"
                 android:contentDescription="@string/TitleMoney"
-                android:focusable="false"
+                android:focusable="true"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -270,8 +260,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/kampf"
                 android:contentDescription="@string/TitleCombat"
-                android:focusable="false"
+                android:focusable="true"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -290,8 +281,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/gm"
                 android:contentDescription="@string/TitleGM"
-                android:focusable="false"
+                android:focusable="true"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/but_geld" />
@@ -299,10 +291,11 @@
             <ImageView
                 android:id="@+id/but_dice"
                 android:layout_width="0dp"
+                android:src="@drawable/w20"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/TitleDice"
-                android:focusable="false"
+                android:focusable="true"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/but_kampf" />
@@ -342,7 +335,7 @@
                 android:text="@string/werte_aendern_tmp"
                 android:textSize="22sp"
                 android:autoSizeTextType="uniform"
-                android:autoSizeMinTextSize="5sp"
+                android:autoSizeMinTextSize="3sp"
                 android:autoSizeMaxTextSize="30sp"
                 android:autoSizeStepGranularity="2sp"
                 android:textStyle="bold" />
@@ -353,7 +346,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:entries="@array/array_stats"
-                android:focusable="false"
+                android:contentDescription="Change an attribute value temporarily"
+                android:focusable="true"
                 android:spinnerMode="dialog" />
 
         </LinearLayout>
@@ -369,9 +363,9 @@
                 android:id="@+id/spin_points"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:entries="@array/array_stats"
-                android:focusable="false"
+                android:layout_weight="0.8"
+                android:contentDescription="Add or remove points?"
+                android:focusable="true"
                 android:spinnerMode="dialog" />
 
             <EditText
@@ -381,6 +375,7 @@
                 android:layout_weight="2"
                 android:focusable="true"
                 android:hint="@string/nummer"
+                android:contentDescription="Change about how many points?"
                 android:importantForAutofill="no"
                 android:inputType="number"
                 android:maxLength="2" />
@@ -389,8 +384,9 @@
                 android:id="@+id/but_change_stat"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:focusable="false"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:contentDescription="Change values"
                 android:text="@string/Speichern"
                 android:textSize="18sp" />
         </LinearLayout>

@@ -1,13 +1,11 @@
 package eu.roggstar.luigithehunter.dsaassistent;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.text.InputFilter;
 import android.text.InputType;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
@@ -30,7 +28,7 @@ public class MoneyActivity extends AppCompatActivity {
         //Ask for Devices
         mPrefs = getSharedPreferences("DUK", 0);
 
-        this.setTitle(R.string.TitleMoney);
+        this.setTitle("⚖️ " + getResources().getString(R.string.TitleMoney));
 
         //Define Start Values
         
@@ -74,31 +72,31 @@ public class MoneyActivity extends AppCompatActivity {
         tv_kre.setText("Kreuzer " + "(" + sb_kre.getProgress() + ")");
         sb_sch.setMax(3);
         sb_sch.setProgress(mPrefs.getInt("SCH",0));
-        tv_sch.setText("Schicksalspunkte " + "(" + sb_sch.getProgress() + ")");
+        tv_sch.setText("Schicksals P. " + "(" + sb_sch.getProgress() + ")");
 
 
 
         //Real "Coding"
-        but_duk_m.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { sb_duk.setProgress(sb_duk.getProgress()-1);saveVals(); }});
-        but_duk_p.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { sb_duk.setProgress(sb_duk.getProgress()+1);saveVals(); }});
-        but_hel_m.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { sb_hel.setProgress(sb_hel.getProgress()-1);saveVals(); }});
-        but_hel_p.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { sb_hel.setProgress(sb_hel.getProgress()+1);saveVals(); }});
-        but_kre_m.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { sb_kre.setProgress(sb_kre.getProgress()-1);saveVals(); }});
-        but_kre_p.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { sb_kre.setProgress(sb_kre.getProgress()+1);saveVals(); }});
-        but_sil_p.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { sb_sil.setProgress(sb_sil.getProgress()+1);saveVals(); }});
-        but_sil_m.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { sb_sil.setProgress(sb_sil.getProgress()-1);saveVals(); }});
-        but_sch_m.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { sb_sch.setProgress(sb_sch.getProgress()-1);saveVals(); }});
-        but_sch_p.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { sb_sch.setProgress(sb_sch.getProgress()+1);saveVals(); }});
+        but_duk_m.setOnClickListener(V -> { sb_duk.setProgress(sb_duk.getProgress()-1);saveVals(); });
+        but_duk_p.setOnClickListener(V -> { sb_duk.setProgress(sb_duk.getProgress()+1);saveVals(); });
+        but_hel_m.setOnClickListener(V -> { sb_hel.setProgress(sb_hel.getProgress()-1);saveVals(); });
+        but_hel_p.setOnClickListener(V -> { sb_hel.setProgress(sb_hel.getProgress()+1);saveVals(); });
+        but_kre_m.setOnClickListener(V -> { sb_kre.setProgress(sb_kre.getProgress()-1);saveVals(); });
+        but_kre_p.setOnClickListener(V -> { sb_kre.setProgress(sb_kre.getProgress()+1);saveVals(); });
+        but_sil_p.setOnClickListener(V -> { sb_sil.setProgress(sb_sil.getProgress()+1);saveVals(); });
+        but_sil_m.setOnClickListener(V -> { sb_sil.setProgress(sb_sil.getProgress()-1);saveVals(); });
+        but_sch_m.setOnClickListener(V -> { sb_sch.setProgress(sb_sch.getProgress()-1);saveVals(); });
+        but_sch_p.setOnClickListener(V -> { sb_sch.setProgress(sb_sch.getProgress()+1);saveVals(); });
 
 
-        but_duk_m.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) { ldialog(1,false); return true; }});
-        but_duk_p.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) { ldialog(1,true); return true; }});
-        but_hel_m.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) { ldialog(3,false); return true; }});
-        but_hel_p.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) { ldialog(3,true); return true; }});
-        but_kre_m.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) { ldialog(4,false); return true; }});
-        but_kre_p.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) { ldialog(4,true); return true; }});
-        but_sil_p.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) { ldialog(2,true); return true; }});
-        but_sil_m.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) { ldialog(2,false); return true; }});
+        but_duk_m.setOnLongClickListener(v -> { ldialog(1,false); return true; });
+        but_duk_p.setOnLongClickListener(v -> { ldialog(1,true); return true; });
+        but_hel_m.setOnLongClickListener(v -> { ldialog(3,false); return true; });
+        but_hel_p.setOnLongClickListener(v -> { ldialog(3,true); return true; });
+        but_kre_m.setOnLongClickListener(v -> { ldialog(4,false); return true; });
+        but_kre_p.setOnLongClickListener(v -> { ldialog(4,true); return true; });
+        but_sil_p.setOnLongClickListener(v -> { ldialog(2,true); return true; });
+        but_sil_m.setOnLongClickListener(v -> { ldialog(2,false); return true; });
 
 
         sb_duk.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -181,7 +179,7 @@ public class MoneyActivity extends AppCompatActivity {
 
             @Override
             public void onProgressChanged(SeekBar arg0, int progress, boolean arg2) {
-                tv_sch.setText("Schicksalspunkte (" + sb_sch.getProgress() + ")");
+                tv_sch.setText("Schicksals P. (" + sb_sch.getProgress() + ")");
             }
         });
 
@@ -203,27 +201,20 @@ public class MoneyActivity extends AppCompatActivity {
             case(4):two = "Kreuzer";break;
         }
 
-        builder.setTitle("Geld Wechseln");
+        builder.setTitle(getResources().getString(R.string.change_money));
         builder.setMessage("("+mul*10+" "+one+" - > "+mul+" "+two+")");
-        builder.setPositiveButton("Ja", new DialogInterface.OnClickListener() {
-
-            public void onClick(DialogInterface dialog, int which) {
-            //TODO Fix catch result vagineeer
-                if(in==2 && out==1 && sb_sil.getProgress() >= mul*10){sb_duk.setProgress(sb_duk.getProgress()+mul);sb_sil.setProgress(sb_sil.getProgress()-mul*10);}
-                if(in==3 && out==2 && sb_hel.getProgress() >= mul*10){sb_sil.setProgress(sb_sil.getProgress()+mul);sb_hel.setProgress(sb_hel.getProgress()-mul*10);}
-                if(in==4 && out==3 && sb_kre.getProgress() >= mul*10){sb_hel.setProgress(sb_hel.getProgress()+mul);sb_kre.setProgress(sb_kre.getProgress()-mul*10);}
-                saveVals();
-                dialog.dismiss();
-            }
+        builder.setPositiveButton(getResources().getString(R.string.Ja), (dialog, which) -> {
+        //TODO Fix catch result
+            if(in==2 && out==1 && sb_sil.getProgress() >= mul*10){sb_duk.setProgress(sb_duk.getProgress()+mul);sb_sil.setProgress(sb_sil.getProgress()-mul*10);}
+            if(in==3 && out==2 && sb_hel.getProgress() >= mul*10){sb_sil.setProgress(sb_sil.getProgress()+mul);sb_hel.setProgress(sb_hel.getProgress()-mul*10);}
+            if(in==4 && out==3 && sb_kre.getProgress() >= mul*10){sb_hel.setProgress(sb_hel.getProgress()+mul);sb_kre.setProgress(sb_kre.getProgress()-mul*10);}
+            saveVals();
+            dialog.dismiss();
         });
 
-        builder.setNegativeButton("Nein", new DialogInterface.OnClickListener() {
-
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                // Do nothing
-                dialog.dismiss();
-            }
+        builder.setNegativeButton(getResources().getString(R.string.Nein), (dialog, which) -> {
+            // Do nothing
+            dialog.dismiss();
         });
 
         AlertDialog alert = builder.create();
@@ -292,6 +283,7 @@ public class MoneyActivity extends AppCompatActivity {
                     break;
             }
         }
+        saveVals();
         return true;
     }
 
@@ -311,16 +303,22 @@ public class MoneyActivity extends AppCompatActivity {
             case(1):
                 if(d < amount*1000){
                     return false;
+                } else {
+                    amount *= 1000;
                 }
                 break;
             case(2):
                 if(d < amount*100){
                     return false;
+                } else {
+                    amount *= 100;
                 }
                 break;
             case(3):
                 if(d < amount*10){
                     return false;
+                } else {
+                    amount *= 10;
                 }
                 break;
             case(4):
@@ -331,60 +329,21 @@ public class MoneyActivity extends AppCompatActivity {
         }
 
         while(amount != 0){
-            switch(in){
-                case(1):
-                    if(sb_duk.getProgress() >= 1){
-                        sb_duk.setProgress(sb_duk.getProgress()-1);
-                        amount--;
-                    } else if (sb_sil.getProgress() >= 10){
-                        sb_sil.setProgress(sb_sil.getProgress()-10);
-                        sb_duk.setProgress(sb_duk.getProgress()+1);
-                    } else if (sb_hel.getProgress() >= 10){
-                        sb_hel.setProgress(sb_hel.getProgress()-10);
-                        sb_sil.setProgress(sb_sil.getProgress()+1);
-                    } else if (sb_kre.getProgress() >= 10){
-                        sb_kre.setProgress(sb_kre.getProgress()-10);
-                        sb_hel.setProgress(sb_hel.getProgress()+1);
-                    }
-                    break;
-                case(2):
-                    if (sb_sil.getProgress() >= 1){
-                        sb_sil.setProgress(sb_sil.getProgress()-1);
-                        amount--;
-                    } else if (sb_hel.getProgress() >= 10){
-                        sb_hel.setProgress(sb_hel.getProgress()-10);
-                        sb_sil.setProgress(sb_sil.getProgress()+1);
-                    } else if (sb_kre.getProgress() >= 10){
-                        sb_kre.setProgress(sb_kre.getProgress()-10);
-                        sb_hel.setProgress(sb_hel.getProgress()+1);
-                    }
-                    break;
-                case(3):
-                    if (sb_hel.getProgress() >= 1){
-                        sb_hel.setProgress(sb_hel.getProgress()-1);
-                        amount--;
-                    } else if (sb_kre.getProgress() >= 10){
-                        sb_kre.setProgress(sb_kre.getProgress()-10);
-                        sb_hel.setProgress(sb_hel.getProgress()+1);
-                    }
-                    break;
-                case(4):
-                    if (sb_kre.getProgress() >= 1){
-                        sb_kre.setProgress(sb_kre.getProgress()-1);
-                        amount--;
-                    } else if (sb_hel.getProgress() >= 1){
-                        sb_hel.setProgress(sb_hel.getProgress()-1);
-                        sb_kre.setProgress(sb_kre.getProgress()+10);
-                    } else if (sb_sil.getProgress() >= 1){
-                        sb_sil.setProgress(sb_sil.getProgress()-1);
-                        sb_hel.setProgress(sb_hel.getProgress()+10);
-                    } else if (sb_duk.getProgress() >= 1){
-                        sb_duk.setProgress(sb_duk.getProgress()-1);
-                        sb_sil.setProgress(sb_sil.getProgress()+10);
-                    }
-                    break;
+            if(amount - 1000 >= 0 && sb_duk.getProgress() > 0){
+                sb_duk.setProgress(sb_duk.getProgress()-1);
+                amount -= 1000;
+            } else if(amount - 100 >= 0 && sb_sil.getProgress() > 0){
+                sb_sil.setProgress(sb_sil.getProgress()-1);
+                amount -= 100;
+            } else if(amount - 10 >= 0 && sb_hel.getProgress() > 0){
+                sb_hel.setProgress(sb_hel.getProgress()-1);
+                amount -= 10;
+            } else if(amount - 1 >= 0 && sb_kre.getProgress() > 0) {
+                sb_kre.setProgress(sb_kre.getProgress() - 1);
+                amount -= 1;
             }
         }
+        saveVals();
         return true;
     }
 
@@ -392,7 +351,6 @@ public class MoneyActivity extends AppCompatActivity {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         String one="",two="";
-
 
         switch(in){
             case(1):one = " Dukaten";break;
@@ -413,29 +371,27 @@ public class MoneyActivity extends AppCompatActivity {
         builder.setCancelable(false);
 
         final EditText edtxt = new EditText(this);
-
+        //edtxt.setPadding(100,0,100,0);
         edtxt.setFilters(new InputFilter[] {new InputFilter.LengthFilter(4)});
         edtxt.setInputType(InputType.TYPE_CLASS_NUMBER);
         builder.setView(edtxt);
 
-        builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
+        builder.setCancelable(true);
 
-                 activ = false;
-                    if(edtxt.length() != 0) {
-                        Integer inpu = Integer.parseInt(edtxt.getText().toString());
-                        if (pom == true) {
-                            if(!addM(in,inpu)){
-                                Toast.makeText(MoneyActivity.this, "Fehler!", Toast.LENGTH_SHORT).show();
-                            } else {Toast.makeText(MoneyActivity.this, "Dir wurden " + inpu.toString() + fone + " hinzugefügt.", Toast.LENGTH_SHORT).show();}
-                        } else {
-                            if(!remM(in,inpu)){
-                                Toast.makeText(MoneyActivity.this, "Nicht genug Geld!", Toast.LENGTH_SHORT).show();
-                            } else {Toast.makeText(MoneyActivity.this, "Dir wurden "+inpu.toString()+fone+" abgezogen.", Toast.LENGTH_SHORT).show();}
-                        }
+        builder.setNeutralButton("OK", (dialog, which) -> {
+             activ = false;
+                if(edtxt.length() != 0) {
+                    Integer inpu = Integer.parseInt(edtxt.getText().toString());
+                    if (pom == true) {
+                        if(!addM(in,inpu)){
+                            Toast.makeText(MoneyActivity.this, getResources().getString(R.string.Fehler), Toast.LENGTH_SHORT).show();
+                        } else {Toast.makeText(MoneyActivity.this,  inpu.toString() + " " + fone + " " + getResources().getString(R.string.Geld_Hinzu2)+".", Toast.LENGTH_SHORT).show();}
+                    } else {
+                        if(!remM(in,inpu)){
+                            Toast.makeText(MoneyActivity.this, getResources().getString(R.string.Nicht_genug_Geld), Toast.LENGTH_SHORT).show();
+                        } else {Toast.makeText(MoneyActivity.this, inpu.toString()+" "+fone+" "+getResources().getString(R.string.Geld_Abgezo2)+".", Toast.LENGTH_SHORT).show();}
                     }
-            }
+                }
         });
         activ = true;
         builder.show();

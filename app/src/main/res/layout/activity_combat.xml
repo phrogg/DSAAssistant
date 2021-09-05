@@ -1,286 +1,282 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:fillViewport="true">
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context="eu.roggstar.luigithehunter.dsaassistent.CombatActivity">
-
-    <LinearLayout
-        android:id="@+id/Linear"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        app:layout_constraintHeight_percent="0.4"
-        android:orientation="vertical"
-        android:weightSum="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/tv_lep"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="@string/Lebenspunkte"
-            android:textSize="20sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.123" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/but_lep_m"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="-"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <SeekBar
-                android:id="@+id/sb_lep"
-                android:layout_width="255dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="51dp" />
-
-            <Button
-                android:id="@+id/but_lep_p"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="onClick"
-                android:text="+"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/tv_ast"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="@string/Astralpunkte_Karma"
-            android:textSize="20sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.123" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/but_ast_m"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="-"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <SeekBar
-                android:id="@+id/sb_ast"
-                android:layout_width="255dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                tools:layout_editor_absoluteY="51dp" />
-
-            <Button
-                android:id="@+id/but_ast_p"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="onClick"
-                android:text="+"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/tv_wunden"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/Wunden"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/scrolldroid" />
 
     <ScrollView
-        app:layout_constraintHeight_percent="0.45"
-        android:id="@+id/scrolldroid"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="220dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/Linear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/tv_lep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Lebenspunkte"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <View
-                    android:id="@+id/pl_3"
-                    android:layout_width="1dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1" />
-
-                <ImageView
-                    android:id="@+id/iv_head"
-                    android:layout_width="190dp"
-                    android:layout_height="108dp"
-                    android:clickable="true"
-                    android:contentDescription="Kopf"
-                    android:focusable="true"
-                    android:onClick="onClick"
-                    app:srcCompat="@drawable/andro_head" />
-
-                <View
-                    android:id="@+id/pl_4"
-                    android:layout_width="1dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:weightSum="1">
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="0.50" />
-
-                <ImageView
-                    android:id="@+id/iv_la"
-                    android:layout_width="70dp"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:contentDescription="Linker Arm"
-                    android:focusable="false"
-                    android:onClick="onClick"
-                    app:srcCompat="@drawable/andro_la" />
-
-                <ImageView
-                    android:id="@+id/iv_stomach"
-                    android:layout_width="185dp"
-                    android:layout_height="105dp"
-                    android:clickable="true"
-                    android:contentDescription="Bauch"
-                    android:focusable="false"
-                    android:onClick="onClick"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/andro_stomach" />
-
-                <ImageView
-                    android:id="@+id/iv_ra"
-                    android:layout_width="70dp"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:contentDescription="Rechter Arm"
-                    android:focusable="false"
-                    android:onClick="onClick"
-                    app:srcCompat="@drawable/andro_ra" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="0.50" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:orientation="horizontal"
-                android:weightSum="1">
-
-                <View
-                    android:id="@+id/pl_2"
+                <Button
+                    android:id="@+id/but_lep_m"
                     android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="0.50" />
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="18sp" />
 
-                <ImageView
-                    android:id="@+id/iv_ll"
-                    android:layout_width="88dp"
-                    android:layout_height="95dp"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="Linker Fuß"
+
+                <SeekBar
+                    android:layout_width="0dp"
+                    android:id="@+id/sb_lep"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <Button
+                    android:id="@+id/but_lep_p"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:onClick="onClick"
-                    app:srcCompat="@drawable/andro_ll" />
-
-                <View
-                    android:id="@+id/pl_1"
-                    android:layout_width="5dp"
-                    android:layout_height="0dp" />
-
-                <ImageView
-                    android:id="@+id/iv_rl"
-                    android:layout_width="88dp"
-                    android:layout_height="95dp"
-                    android:clickable="true"
-                    android:contentDescription="Rechter Fuß"
-                    android:focusable="false"
-                    android:onClick="onClick"
-                    app:srcCompat="@drawable/andro_rl" />
-
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="18sp" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_ast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/Astralpunkte_Karma"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.123" />
+
+            <LinearLayout
+                android:id="@+id/linLayAst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/but_ast_m"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="18sp" />
+
+                <SeekBar
+                    android:id="@+id/sb_ast"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    tools:layout_editor_absoluteY="51dp" />
+
+                <Button
+                    android:id="@+id/but_ast_p"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
 
-</ScrollView>
+            <TextView
+                android:id="@+id/tv_wunden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Wunden"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:id="@+id/scrolldroid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/pl_3"
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/iv_head"
+                            android:layout_width="190dp"
+                            android:layout_height="108dp"
+                            android:clickable="true"
+                            android:contentDescription="Kopf"
+                            android:focusable="true"
+                            android:onClick="onClick"
+                            app:srcCompat="@drawable/andro_head" />
+
+                        <View
+                            android:id="@+id/pl_4"
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="0.50" />
+
+                        <ImageView
+                            android:id="@+id/iv_la"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:contentDescription="Linker Arm"
+                            android:focusable="false"
+                            android:onClick="onClick"
+                            app:srcCompat="@drawable/andro_la" />
+
+                        <ImageView
+                            android:id="@+id/iv_stomach"
+                            android:layout_width="185dp"
+                            android:layout_height="105dp"
+                            android:clickable="true"
+                            android:contentDescription="Bauch"
+                            android:focusable="false"
+                            android:onClick="onClick"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/andro_stomach" />
+
+                        <ImageView
+                            android:id="@+id/iv_ra"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:contentDescription="Rechter Arm"
+                            android:focusable="false"
+                            android:onClick="onClick"
+                            app:srcCompat="@drawable/andro_ra" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="0.50" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <View
+                            android:id="@+id/pl_2"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="0.50" />
+
+                        <ImageView
+                            android:id="@+id/iv_ll"
+                            android:layout_width="88dp"
+                            android:layout_height="95dp"
+                            android:adjustViewBounds="false"
+                            android:contentDescription="Linker Fuß"
+                            android:onClick="onClick"
+                            app:srcCompat="@drawable/andro_ll" />
+
+                        <View
+                            android:id="@+id/pl_1"
+                            android:layout_width="5dp"
+                            android:layout_height="0dp" />
+
+                        <ImageView
+                            android:id="@+id/iv_rl"
+                            android:layout_width="88dp"
+                            android:layout_height="95dp"
+                            android:clickable="true"
+                            android:contentDescription="Rechter Fuß"
+                            android:focusable="false"
+                            android:onClick="onClick"
+                            app:srcCompat="@drawable/andro_rl" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+</LinearLayout>

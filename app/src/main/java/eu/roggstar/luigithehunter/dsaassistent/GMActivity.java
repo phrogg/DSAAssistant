@@ -40,9 +40,7 @@ public class GMActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gm);
 
-
-        this.setTitle(R.string.TitleGM);
-
+        this.setTitle("\uD83D\uDCDC " + getResources().getString(R.string.TitleGM));
 
         lv_inititive = findViewById(R.id.lv_inititive);
 
@@ -62,26 +60,15 @@ public class GMActivity extends AppCompatActivity {
         mEdit = mPrefs.edit();
         loadMap();
 
-        lv_inititive.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                movedialog(position); //TODO
-            }
+        lv_inititive.setOnItemClickListener((parent, view, position, id) -> {
+            movedialog(position); //TODO
         });
-        lv_inititive.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> arg0, View arg1, int pos, long id) {
-                miscdialog(pos);
-                return true;
-            }
+        lv_inititive.setOnItemLongClickListener((arg0, arg1, pos, id) -> {
+            miscdialog(pos);
+            return true;
         });
 
-        findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                adddialog();
-            }
-        });
+        findViewById(R.id.fab).setOnClickListener(view -> adddialog());
     }
 
     private void sortAllItemsInList(){
@@ -92,11 +79,12 @@ public class GMActivity extends AppCompatActivity {
                 currItem = list.get(i);
                 nextItem = list.get(i + 1);
 
-                if(nextItem.get("ini") != null || currItem.get("ini") != null && Integer.parseInt(nextItem.get("ini")) > Integer.parseInt(currItem.get("ini"))) {
-                    //list.get(i);
-                    list.set(i + 1, currItem); //TODO
-                    list.set(i,nextItem);
-                    i = -1;
+                if(nextItem.get("ini") != null || currItem.get("ini") != null) {
+                    if(Integer.parseInt(nextItem.get("ini")) > Integer.parseInt(currItem.get("ini"))){
+                        list.set(i + 1, currItem);
+                        list.set(i,nextItem);
+                        i = -1;
+                    }
                 }
             }
         }
@@ -154,10 +142,11 @@ public class GMActivity extends AppCompatActivity {
         builder.setCancelable(false);
 
         final EditText one = new EditText(this);
-        one.setHint("Name");//optional
+        one.setHint("Name"); // optional
         final EditText two = new EditText(this);
-        two.setHint("INI");//optional
+        two.setHint("INI"); // optional
 
+        // construct inputboxes
         one.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
         two.setInputType(InputType.TYPE_CLASS_NUMBER);
 
@@ -168,46 +157,38 @@ public class GMActivity extends AppCompatActivity {
 
         builder.setView(lay);
 
-        two.setOnKeyListener(new View.OnKeyListener() {
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                // If the event is a key-down event on the "enter" button
-                return (event.getAction() == KeyEvent.ACTION_DOWN) &&
-                        (keyCode == KeyEvent.KEYCODE_ENTER);
+        two.setOnKeyListener((v, keyCode, event) -> {
+            // If the event is a key-down event on the "enter" button
+            return (event.getAction() == KeyEvent.ACTION_DOWN) &&
+                    (keyCode == KeyEvent.KEYCODE_ENTER);
 
 
-                /*
-                if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                    return true;
-                }
-                return false;
-                 */
+            /*
+            if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                return true;
+            }
+            return false;
+             */
+        });
+
+        builder.setPositiveButton(getString(R.string.InIHinzufugenJa), (dialog, which) -> {
+
+            boolean wantToCloseDialog = (one.getText().toString().trim().isEmpty()); //Boolean
+            boolean wantToCloseDialog2 = (two.getText().toString().trim().isEmpty());
+
+            if (!wantToCloseDialog && !wantToCloseDialog2) {
+                HashMap<String,String> temp = new HashMap<>();
+                temp.put("name", one.getText().toString());
+                temp.put("ini", two.getText().toString());
+
+                list.add(temp);
+                sortAllItemsInList();
+                saveMap();
             }
         });
 
-        builder.setNeutralButton(getString(R.string.InIHinzufugenJa), new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
+        builder.setNegativeButton(getString(R.string.InIHinzufugenNein), (dialog, which) -> {
 
-                boolean wantToCloseDialog = (one.getText().toString().trim().isEmpty()); //Bolean
-                boolean wantToCloseDialog2 = (two.getText().toString().trim().isEmpty());
-
-                if (!wantToCloseDialog && !wantToCloseDialog2) {
-                    HashMap<String,String> temp = new HashMap<>();
-                    temp.put("name", one.getText().toString());
-                    temp.put("ini", two.getText().toString());
-
-                    list.add(temp);
-                    sortAllItemsInList();
-                    saveMap();
-                }
-            }
-        });
-
-        builder.setNegativeButton(getString(R.string.InIHinzufugenNein), new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
         });
 
         builder.show();
@@ -224,19 +205,12 @@ public class GMActivity extends AppCompatActivity {
         input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
         builder.setView(input);
 
-        input.setOnKeyListener(new View.OnKeyListener() {
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                return (event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER);
-            }
-        });
+        input.setOnKeyListener((v, keyCode, event) -> (event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER));
 
-        builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                boolean wantToCloseDialog = (input.getText().toString().trim().isEmpty());
-                if (!wantToCloseDialog) {
-                    renameItemInList(pos,input.getText().toString(),false);
-                }
+        builder.setNeutralButton("OK", (dialog, which) -> {
+            boolean wantToCloseDialog = (input.getText().toString().trim().isEmpty());
+            if (!wantToCloseDialog) {
+                renameItemInList(pos,input.getText().toString(),false);
             }
         });
 
@@ -248,20 +222,14 @@ public class GMActivity extends AppCompatActivity {
 
         builder.setTitle(getString(R.string.GM_Bearbeiten));
         builder.setMessage(list.get(pos).get("name"));
-        builder.setPositiveButton(getString(R.string.GM_Umbenennen), new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                rendialog(pos);
-                dialog.dismiss();
-            }
+        builder.setPositiveButton(getString(R.string.GM_Umbenennen), (dialog, which) -> {
+            rendialog(pos);
+            dialog.dismiss();
         });
 
-        builder.setNegativeButton(getString(R.string.GM_Loschen), new DialogInterface.OnClickListener() {
-
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                removeItemFromList(pos);
-                dialog.dismiss();
-            }
+        builder.setNegativeButton(getString(R.string.GM_Loschen), (dialog, which) -> {
+            removeItemFromList(pos);
+            dialog.dismiss();
         });
 
         AlertDialog alert = builder.create();
@@ -293,22 +261,15 @@ public class GMActivity extends AppCompatActivity {
        input.setInputType(InputType.TYPE_CLASS_NUMBER);
        builder.setView(input);
 
-       input.setOnKeyListener(new View.OnKeyListener() {
-           public boolean onKey(View v, int keyCode, KeyEvent event) {
-               return (event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER);
-           }
-       });
+       input.setOnKeyListener((v, keyCode, event) -> (event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER));
 
-       builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
-           @Override
-           public void onClick(DialogInterface dialog, int which) {
-               boolean wantToCloseDialog = (input.getText().toString().trim().isEmpty());
-               if (!wantToCloseDialog) {
-                   if(TextUtils.isDigitsOnly(input.getText())) {
-                       renameItemInList(pos, input.getText().toString(), true);
-                   } else {
-                       Toast.makeText(GMActivity.this, getString(R.string.error_toomuch), Toast.LENGTH_LONG).show();
-                   }
+       builder.setNeutralButton("OK", (dialog, which) -> {
+           boolean wantToCloseDialog = (input.getText().toString().trim().isEmpty());
+           if (!wantToCloseDialog) {
+               if(TextUtils.isDigitsOnly(input.getText())) {
+                   renameItemInList(pos, input.getText().toString(), true);
+               } else {
+                   Toast.makeText(GMActivity.this, getString(R.string.error_toomuch), Toast.LENGTH_LONG).show();
                }
            }
        });

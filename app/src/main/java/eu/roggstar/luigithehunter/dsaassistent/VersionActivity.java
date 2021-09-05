@@ -2,16 +2,13 @@ package eu.roggstar.luigithehunter.dsaassistent;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-//import com.bumptech.glide.BuildConfig;
-import com.bumptech.glide.Glide;
 
 public class VersionActivity extends AppCompatActivity {
 
@@ -21,28 +18,17 @@ public class VersionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_version);
 
         final TextView tv_version =  findViewById(R.id.tv_version);
-        final ImageView img_rogg = findViewById(R.id.img_rogg);
+        final TextView tv_copyright =  findViewById(R.id.tv_copyright);
         final ImageView img_logo = findViewById(R.id.img_logo);
         tv_version.setTextColor(getResources().getColor(R.color.colorPrimary));
-        tv_version.setText(BuildConfig.VERSION_NAME + ", " + BuildConfig.VERSION_CODE);
+        tv_version.setText(BuildConfig.VERSION_NAME + ", V:" + BuildConfig.VERSION_CODE);
+        tv_copyright.setMovementMethod(LinkMovementMethod.getInstance());
+        this.setTitle("\uD83C\uDFD7️ with ✨ in \uD83C\uDDE9\uD83C\uDDEA");
 
-        Glide.with(this).load(R.drawable.rogg).into(img_rogg);
-        Glide.with(this).load(R.drawable.logo).into(img_logo);
-
-        img_rogg.setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View V) {
-                        fadeOutAndHideImage(img_rogg);
-                        fadeInAndShowImage(img_logo);
-                    }
-                }
-        );
-        img_logo.setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View V) {
-                        fadeOutAndHideImage(img_logo);
-                        fadeInAndShowImage(img_rogg);
-                    }
+        img_logo.setOnLongClickListener(
+                V -> {
+                    fadeOutAndHideImage(img_logo);
+                    return false;
                 }
         );
     }
@@ -76,6 +62,15 @@ public class VersionActivity extends AppCompatActivity {
             public void onAnimationEnd(Animation animation)
             {
                 img.setVisibility(View.INVISIBLE);
+
+                if(img.getContentDescription().toString().equals("DSA Assistant Logo")){
+                    img.setImageResource(R.drawable.rogg);
+                    img.setContentDescription("Roggstar Logo");
+                } else {
+                    img.setImageResource(R.drawable.logo);
+                    img.setContentDescription("DSA Assistant Logo");
+                }
+                fadeInAndShowImage(img);
             }
             public void onAnimationRepeat(Animation animation) {}
             public void onAnimationStart(Animation animation) {}

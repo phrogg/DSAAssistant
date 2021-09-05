@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="eu.roggstar.luigithehunter.dsaassistent.MoneyActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
     <LinearLayout
         android:id="@+id/Linear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginBottom="2dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -52,17 +42,20 @@
 
             <Button
                 android:id="@+id/but_duk_m"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:longClickable="true"
                 android:text="-"
                 android:textAlignment="center"
+                android:layout_gravity="center"
+                
                 android:textSize="18sp" />
 
             <SeekBar
                 android:id="@+id/sb_duk"
-                android:layout_width="270dp"
+                android:layout_width="0dp"
+                android:layout_weight="4"
                 android:layout_height="match_parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -70,12 +63,14 @@
 
             <Button
                 android:id="@+id/but_duk_p"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:longClickable="true"
                 android:text="+"
                 android:textAlignment="center"
+                android:layout_gravity="center"
+                
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -101,17 +96,19 @@
 
             <Button
                 android:id="@+id/but_sil_m"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:longClickable="true"
                 android:text="-"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 android:textSize="18sp" />
 
             <SeekBar
                 android:id="@+id/sb_sil"
-                android:layout_width="270dp"
+                android:layout_width="0dp"
+                android:layout_weight="4"
                 android:layout_height="match_parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -119,12 +116,13 @@
 
             <Button
                 android:id="@+id/but_sil_p"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:longClickable="true"
                 android:text="+"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -150,17 +148,19 @@
 
             <Button
                 android:id="@+id/but_hel_m"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:longClickable="true"
                 android:text="-"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 android:textSize="18sp" />
 
             <SeekBar
                 android:id="@+id/sb_hel"
-                android:layout_width="270dp"
+                android:layout_width="0dp"
+                android:layout_weight="4"
                 android:layout_height="match_parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -168,12 +168,13 @@
 
             <Button
                 android:id="@+id/but_hel_p"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:longClickable="true"
                 android:text="+"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -199,17 +200,19 @@
 
             <Button
                 android:id="@+id/but_kre_m"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:longClickable="true"
                 android:text="-"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 android:textSize="18sp" />
 
             <SeekBar
                 android:id="@+id/sb_kre"
-                android:layout_width="270dp"
+                android:layout_width="0dp"
+                android:layout_weight="4"
                 android:layout_height="match_parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -217,12 +220,13 @@
 
             <Button
                 android:id="@+id/but_kre_p"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:longClickable="true"
                 android:text="+"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -239,7 +243,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.123"
-            tools:text="Schicksalspunkte" />
+            tools:text="Schicksals P." />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -248,17 +252,19 @@
 
             <Button
                 android:id="@+id/but_sch_m"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:longClickable="true"
                 android:text="-"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 android:textSize="18sp" />
 
             <SeekBar
                 android:id="@+id/sb_sch"
-                android:layout_width="270dp"
+                android:layout_width="0dp"
+                android:layout_weight="4"
                 android:layout_height="match_parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -266,15 +272,15 @@
 
             <Button
                 android:id="@+id/but_sch_p"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:longClickable="true"
                 android:text="+"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 android:textSize="18sp" />
         </LinearLayout>
 
     </LinearLayout>
     </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
