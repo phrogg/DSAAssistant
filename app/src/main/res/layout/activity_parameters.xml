@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<androidx.constraintlayout.widget.ConstraintLayout -->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".ParametersActivity">-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParametersActivity">
 
 
     <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +24,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <TextView
@@ -35,7 +32,6 @@
                     android:layout_width="0dp"
                     android:layout_weight="3"
                     android:layout_height="40dp"
-                    android:layout_gravity="center"
                     android:gravity="end"
                     android:paddingRight="4dp"
                     android:paddingLeft="4dp"
@@ -44,7 +40,7 @@
                     android:textSize="30sp"
                     android:autoSizeTextType="uniform"
                     android:autoSizeMinTextSize="20sp"
-                    android:autoSizeMaxTextSize="30sp"
+                    android:autoSizeMaxTextSize="35sp"
                     android:autoSizeStepGranularity="2sp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="244dp" />
@@ -57,7 +53,6 @@
                 <EditText
                     android:id="@+id/tv_mu"
                     android:layout_width="0dp"
-                    android:layout_gravity="center"
                     android:layout_weight="1"
                     android:layout_height="40dp"
                     android:background="@null"
@@ -93,7 +88,6 @@
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="0dp"
-                    android:layout_gravity="center"
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="end"
@@ -118,7 +112,6 @@
                     android:id="@+id/tv_kl"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_gravity="center"
                     android:layout_height="40dp"
                     android:background="@null"
                     android:ems="10"
@@ -154,7 +147,6 @@
                     android:id="@+id/textView9"
                     android:layout_width="0dp"
                     android:layout_weight="3"
-                    android:layout_gravity="center"
                     android:layout_height="40dp"
                     android:gravity="end"
                     android:paddingRight="4dp"
@@ -179,7 +171,6 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="40dp"
-                    android:layout_gravity="center"
                     android:background="@null"
                     android:ems="10"
                     android:enabled="true"
@@ -213,7 +204,6 @@
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="0dp"
-                    android:layout_gravity="center"
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="end"
@@ -237,7 +227,6 @@
                 <EditText
                     android:id="@+id/tv_ff"
                     android:layout_width="0dp"
-                    android:layout_gravity="center"
                     android:layout_weight="1"
                     android:layout_height="40dp"
                     android:background="@null"
@@ -273,7 +262,6 @@
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="0dp"
-                    android:layout_gravity="center"
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="end"
@@ -297,7 +285,6 @@
                 <EditText
                     android:id="@+id/tv_ge"
                     android:layout_width="0dp"
-                    android:layout_gravity="center"
                     android:layout_weight="1"
                     android:layout_height="40dp"
                     android:background="@null"
@@ -333,7 +320,6 @@
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="0dp"
-                    android:layout_gravity="center"
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="end"
@@ -358,7 +344,6 @@
                     android:id="@+id/tv_ch"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_gravity="center"
                     android:layout_height="40dp"
                     android:background="@null"
                     android:ems="10"
@@ -393,7 +378,6 @@
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="0dp"
-                    android:layout_gravity="center"
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="end"
@@ -418,7 +402,6 @@
                     android:id="@+id/tv_ko"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_gravity="center"
                     android:layout_height="40dp"
                     android:background="@null"
                     android:ems="10"
@@ -452,7 +435,6 @@
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="0dp"
-                    android:layout_gravity="center"
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="end"
@@ -477,7 +459,6 @@
                     android:id="@+id/tv_kk"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_gravity="center"
                     android:layout_height="40dp"
                     android:background="@null"
                     android:ems="10"
@@ -512,7 +493,6 @@
                     android:id="@+id/textView13"
                     android:layout_width="0dp"
                     android:layout_weight="3"
-                    android:layout_gravity="center"
                     android:layout_height="40dp"
                     android:gravity="end"
                     android:paddingRight="4dp"
@@ -537,7 +517,6 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="40dp"
-                    android:layout_gravity="center"
                     android:background="@null"
                     android:ems="10"
                     android:enabled="true"
@@ -571,7 +550,6 @@
                     android:id="@+id/textView2"
                     android:layout_width="0dp"
                     android:layout_weight="3"
-                    android:layout_gravity="center"
                     android:layout_height="40dp"
                     android:gravity="end"
                     android:paddingRight="4dp"
@@ -595,7 +573,6 @@
                     android:id="@+id/tv_mr"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_gravity="center"
                     android:layout_height="40dp"
                     android:background="@null"
                     android:ems="10"
@@ -624,7 +601,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
@@ -693,7 +669,6 @@
                     android:id="@+id/tv_lep"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_gravity="center"
                     android:layout_height="40dp"
                     android:background="@null"
                     android:ems="10"
@@ -720,7 +695,6 @@
                 <TextView
                     android:id="@+id/textView16"
                     android:layout_width="0dp"
-                    android:layout_gravity="center"
                     android:layout_weight="3"
                     android:layout_height="40dp"
                     android:gravity="start"
@@ -741,7 +715,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
                 android:orientation="horizontal">
 
                 <Space
@@ -799,4 +772,4 @@
     </ScrollView>
 
 
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
