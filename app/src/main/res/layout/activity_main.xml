@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,11 +7,6 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 <androidx.constraintlayout.widget.ConstraintLayout
-=======
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
->>>>>>> parent of d88a0a9... fixed the blocked elements on the main page
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusable="false"
@@ -406,3 +400,4 @@
         app:layout_constraintTop_toBottomOf="@id/ll_ptmp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
