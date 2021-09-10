@@ -18,8 +18,8 @@
     <string name="TitleCombat">Combat Manager</string>
     <string name="TitleDice">Dices</string>
     <string name="TitleMoney">Purse</string>
-    <string name="TitleParameter">Your attributes</string>
-    <string name="TitleGM">GameMaster Tool(s)</string>
+    <string name="TitleParameter">Set your attributes</string>
+    <string name="TitleGM">INI List</string>
 
     <!-- Misc -->
     <string name="Lebenspunkte">Healthpoints</string>
@@ -30,7 +30,7 @@
     <string name="Ideen_Feedback">Ideas/Feedback</string>
     <string name="Wunden">Wounds</string>
     <string name="Wunden_Manager">Wound Manager</string>
-    <string name="Wunde_NeuAlt">New wound, or a healed one?</string>
+    <string name="Wunde_NeuAlt">Did you get a wound or was one healed?</string>
     <string name="Wunde_Neu">New wound</string>
     <string name="Wunde_Alt">Healed</string>
     <string name="Astralpunkte_Karma">Astralpoints / Karma</string>
@@ -57,11 +57,10 @@
     <string name="Geschwindigkeit">Velocity</string>
     <string name="Gespeichert">Saved!</string>
     <string name="NichtGespeichert">Not saved!</string>
-    <string name="AllesAusfuellen">Not everything is filled!</string>
+    <string name="AllesAusfuellen">Fill in everything! (only astral points are optional)</string>
 
     <!-- Non Specific -->
     <string name="app_name">DSA Assistent</string>
-    <string name="devs">Developing and UI by \n<b>Phil Roggenbuck</b>\nLogo Designs by\n<b>Rober Cordie</b>\nWith a very friendly approval of\n<b>Ulisses-us.com</b></string>
     <string name="GM_Bearbeiten">Edit</string>
     <string name="GM_ChangeINI1">Change INI from</string>
     <string name="GM_ChangeINI2"></string>
@@ -71,4 +70,12 @@
     <string name="GM_Umbenennen">Rename</string>
     <string name="error_toomuch">Puhh, this is waaay too much isn\'t it?!</string>
     <string name="ulisses">Copyright</string>
+    <string name="change_money">Change Money</string>
+    <string name="Ja">Yeeees</string>
+    <string name="Nein">Nooo</string>
+    <string name="Fehler">Failure!</string>
+    <string name="Geld_Hinzu2">have been added</string>
+    <string name="Nicht_genug_Geld">You don\'t have enough money!</string>
+    <string name="Geld_Abgezo2">have been removed</string>
+    <string name="devs">Contributors:\nRober Cordie (2 much 2 list)\n<a href="https://github.com/yuhuitech">Yuhui Su</a> (<a href="https://github.com/phrogg/DSAAssistant/pull/17">#17</a>)\n<a href="https://github.com/licaon-kter">Licaon_Kter</a> (<a href="https://github.com/phrogg/DSAAssistant/commit/1df9f8564c612dc9ddf71a0084611409f78ddda9">.gitignore</a>)\n<a href="https://github.com/johannes">Johannes Schlüter</a> (<a href="https://github.com/phrogg/DSAAssistant/commit/768731d8d29ab0e02bb2e90208440df8c91ff5d3">typo</a>)\n\nWith ❤️ permission of <a href="https://Ulisses-us.com">Ulisses Games</a>.\n\nDeveloping by <a href="https://phrogg.de">Phil Roggenbuck</a></string>
 </resources>

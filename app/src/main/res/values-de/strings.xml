@@ -19,20 +19,20 @@
     <string name="TitleDice">Würfels</string>
     <string name="TitleMoney">Geldbörse</string>
     <string name="TitleParameter">Eigenschaften Setzen</string>
-    <string name="TitleGM">GameMaster Werkzeug(e)</string>
+    <string name="TitleGM">INI Liste</string>
 
     <!-- Misc -->
     <string name="Lebenspunkte">Lebenspunkte</string>
-    <string name="Wunden_Reseten">Wunden Reseten</string>
+    <string name="Wunden_Reseten">Wunden Zurücksetzen</string>
     <string name="Die_Macher">Die Macher</string>
-    <string name="Eig_Reseten">Eig. Reseten</string>
+    <string name="Eig_Reseten">Eigenschaften zurücksetzen</string>
     <string name="aboutMe">Über mich</string>
     <string name="Ideen_Feedback">Ideen/Feedback</string>
     <string name="Wunden">Wunden</string>
     <string name="Wunden_Manager">Wunden Manager</string>
     <string name="Wunde_NeuAlt">Hast du eine Wunde bekommen oder wurde eine geheilt?</string>
     <string name="Wunde_Neu">Neue Wunde</string>
-    <string name="Wunde_Alt">Alte geheilt</string>
+    <string name="Wunde_Alt">Geheilt</string>
     <string name="Astralpunkte_Karma">Astralpunkte / Karma</string>
     <string name="Astral_Karma">Astral / Karma</string>
     <string name="werte_aendern">Werte Ändern</string>
@@ -67,10 +67,17 @@
     <string name="Geschwindigkeit">Geschwindigkeit</string>
     <string name="Gespeichert">Gespeichert!</string>
     <string name="NichtGespeichert">Nicht gespeichert!</string>
-    <string name="AllesAusfuellen">Erst alles ausfüllen!</string>
+    <string name="AllesAusfuellen">Alles ausfüllen! (nur Astralpunkte sind optional)</string>
 
     <!-- Non Specific -->
     <string name="app_name">DSA Assistent</string>
-    <string name="devs">Entwicklung und Design von\n<b>Phil Roggenbuck</b>\nLogos vom feinsten von \n<b>Rober Cordie</b>\nMit freundlicher Genehmigung von\n<b>Ulisses-Spiele.de</b></string>
+    <string name="devs">Beitragende:\nRober Cordie (zu viel zum auflisten)\n<a href="https://github.com/yuhuitech">Yuhui Su</a> (<a href="https://github.com/phrogg/DSAAssistant/pull/17">#17</a>)\n<a href="https://github.com/licaon-kter">Licaon_Kter</a> (<a href="https://github.com/phrogg/DSAAssistant/commit/1df9f8564c612dc9ddf71a0084611409f78ddda9">.gitignore</a>)\n<a href="https://github.com/johannes">Johannes Schlüter</a> (<a href="https://github.com/phrogg/DSAAssistant/commit/768731d8d29ab0e02bb2e90208440df8c91ff5d3">typo</a>)\n\nMit ❤️ Erlaubnis von <a href="https://ulisses-spiele.de">Ulisses Spiele</a>.\n\nEntwickelt von <a href="https://phrogg.de">Phil Roggenbuck</a></string>
     <string name="ulisses">Copyright</string>
+    <string name="change_money">Geld wechseln</string>
+    <string name="Ja">Joaa</string>
+    <string name="Nein">Neee</string>
+    <string name="Fehler">Fehler!</string>
+    <string name="Geld_Hinzu2">wurden dir hinzugefügt</string>
+    <string name="Nicht_genug_Geld">Du hast nicht genug Holz, mein Lord.</string>
+    <string name="Geld_Abgezo2">wurden dir abgezogen</string>
 </resources>

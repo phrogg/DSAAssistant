@@ -63,7 +63,7 @@ public class ParametersActivity extends AppCompatActivity {
         mP_lep = getSharedPreferences("MAX", 0);
         mEditor = mP_lep.edit();
 
-        but_save.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { closeAndSave(); }});
+        but_save.setOnClickListener(V -> closeAndSave());
 
 
         if(mPrefs.getInt("STAT",0) == 1) {
@@ -116,6 +116,7 @@ public class ParametersActivity extends AppCompatActivity {
 
         //Health
         mEditor.putInt("MAX",Integer.parseInt(tv_lep.getText().toString())).commit();
+        mEditor.putInt("LEP",Integer.parseInt(tv_lep.getText().toString())).commit();
         if(Integer.parseInt(tv_ast.getText().toString()) == 0) {
             mEditor.putInt("AMAX", -2).commit();
         } else {

@@ -13,9 +13,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Random;
 
 public class CombatActivity extends AppCompatActivity {
 
@@ -25,6 +28,7 @@ public class CombatActivity extends AppCompatActivity {
     SeekBar sb_lep,sb_ast;
     TextView tv_lep, tv_ast;
     ImageView iv_head,iv_la,iv_ra,iv_ll,iv_rl,iv_stomach;
+    LinearLayout linLayAst;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +49,14 @@ public class CombatActivity extends AppCompatActivity {
         iv_ll = findViewById(R.id.iv_ll);
         iv_rl = findViewById(R.id.iv_rl);
         iv_stomach = findViewById(R.id.iv_stomach);
+        linLayAst = findViewById(R.id.linLayAst);
 
+        {
+            String[] attackArr = new String[]{"⚔️", "\uD83D\uDD2E", "\uD83D\uDDE1️", "\uD83D\uDEE1️", "\uD83C\uDFF9"};
+            Random rand = new Random();
 
-        this.setTitle(R.string.TitleCombat);
+            this.setTitle(attackArr[rand.nextInt(attackArr.length)]+ " " + getResources().getString(R.string.TitleCombat));
+        }
 
         //Ask for Devices
         mP_lep = getSharedPreferences("MAX", 0);
@@ -62,7 +71,7 @@ public class CombatActivity extends AppCompatActivity {
                 sb_ast.setMax(mP_lep.getInt("AMAX",0));
                 sb_ast.setProgress(mP_lep.getInt("AST",0));
                 tv_ast.setText(getString(R.string.Astralpunkte_Karma) + " (" + sb_ast.getProgress() + ")");
-                sb_ast.setVisibility(View.VISIBLE);but_ast_m.setVisibility(View.VISIBLE);but_ast_p.setVisibility(View.VISIBLE);tv_ast.setVisibility(View.VISIBLE);
+                linLayAst.setVisibility(View.VISIBLE);tv_ast.setVisibility(View.VISIBLE);
             }
         }
 
@@ -75,53 +84,42 @@ public class CombatActivity extends AppCompatActivity {
 
 
         but_lep_m.setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View V) {
-                        sb_lep.setProgress(sb_lep.getProgress()-1);
-                        saver();
-                    }
+                V -> {
+                    sb_lep.setProgress(sb_lep.getProgress()-1);
+                    saver();
                 }
         );
 
         but_lep_p.setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View V) {
-                        sb_lep.setProgress(sb_lep.getProgress()+1);
-                        saver();
-                    }
+                V -> {
+                    sb_lep.setProgress(sb_lep.getProgress()+1);
+                    saver();
                 }
         );
 
         but_ast_m.setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View V) {
-                        sb_ast.setProgress(sb_ast.getProgress()-1);
-                        saver();
-                    }
+                V -> {
+                    sb_ast.setProgress(sb_ast.getProgress()-1);
+                    saver();
                 }
         );
 
         but_ast_p.setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View V) {
-                        sb_ast.setProgress(sb_ast.getProgress()+1);
-                        saver();
-                    }
+                V -> {
+                    sb_ast.setProgress(sb_ast.getProgress()+1);
+                    saver();
                 }
         );
 
-        but_lep_m.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                Toast.makeText(CombatActivity.this, "This was a developer function and it has been disabled now.", Toast.LENGTH_LONG).show();
-                /*
-                mEditor.putInt("MAX",0).apply();
-                mEditor.putInt("AMAX",-1).apply();
-                Toast.makeText(CombatActivity.this, "Success!", Toast.LENGTH_SHORT).show();
-                finish();
-                */
-                return true;
-            }
+        but_lep_m.setOnLongClickListener(v -> {
+            Toast.makeText(CombatActivity.this, "This was a developer function and it has been disabled now. Use the menu to reset the stats.", Toast.LENGTH_LONG).show();
+            /*
+            mEditor.putInt("MAX",0).apply();
+            mEditor.putInt("AMAX",-1).apply();
+            Toast.makeText(CombatActivity.this, "Success!", Toast.LENGTH_SHORT).show();
+            finish();
+            */
+            return true;
         });
 
         sb_lep.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener()
@@ -205,21 +203,14 @@ public class CombatActivity extends AppCompatActivity {
 
         builder.setMessage(R.string.Wunde_NeuAlt);
 
-        builder.setPositiveButton(R.string.Wunde_Neu, new DialogInterface.OnClickListener() {
-
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                exec(v,1);
-            }
+        builder.setPositiveButton(R.string.Wunde_Neu, (dialog, which) -> {
+            dialog.dismiss();
+            exec(v,1);
         });
 
-        builder.setNegativeButton(R.string.Wunde_Alt, new DialogInterface.OnClickListener() {
-
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                exec(v,-1);
-            }
+        builder.setNegativeButton(R.string.Wunde_Alt, (dialog, which) -> {
+            dialog.dismiss();
+            exec(v,-1);
         });
 
         AlertDialog alert = builder.create();
@@ -244,7 +235,7 @@ public class CombatActivity extends AppCompatActivity {
                 iv_la.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_4), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
             case 5:
-                iv_la.setVisibility(View.INVISIBLE);
+                iv_la.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_5), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
         }
         switch (mP_lep.getInt("RA",0)){
@@ -264,7 +255,7 @@ public class CombatActivity extends AppCompatActivity {
                 iv_ra.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_4), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
             case 5:
-                iv_ra.setVisibility(View.INVISIBLE);
+                iv_ra.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_5), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
         }
         switch (mP_lep.getInt("STOM",0)){
@@ -284,7 +275,7 @@ public class CombatActivity extends AppCompatActivity {
                 iv_stomach.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_4), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
             case 5:
-                iv_stomach.setVisibility(View.INVISIBLE);
+                iv_stomach.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_5), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
         }
         switch (mP_lep.getInt("HEAD",0)){
@@ -304,7 +295,7 @@ public class CombatActivity extends AppCompatActivity {
                 iv_head.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_4), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
             case 5:
-                iv_head.setVisibility(View.INVISIBLE);
+                iv_head.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_5), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
         }
         switch (mP_lep.getInt("RL",0)){
@@ -324,7 +315,7 @@ public class CombatActivity extends AppCompatActivity {
                 iv_rl.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_4), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
             case 5:
-                iv_rl.setVisibility(View.INVISIBLE);
+                iv_rl.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_5), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
         }
         switch (mP_lep.getInt("LL",0)){
@@ -344,11 +335,12 @@ public class CombatActivity extends AppCompatActivity {
                 iv_ll.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_4), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
             case 5:
-                iv_ll.setVisibility(View.INVISIBLE);
+                iv_ll.setColorFilter(ContextCompat.getColor(CombatActivity.this, R.color.HP_5), android.graphics.PorterDuff.Mode.MULTIPLY);
                 break;
         }
 
-        if(mP_lep.getInt("AMAX",0) == -2){sb_ast.setVisibility(View.GONE);but_ast_m.setVisibility(View.GONE);but_ast_p.setVisibility(View.GONE);tv_ast.setVisibility(View.GONE);}
+        //if(mP_lep.getInt("AMAX",0) == -2){sb_ast.setVisibility(View.GONE);but_ast_m.setVisibility(View.GONE);but_ast_p.setVisibility(View.GONE);tv_ast.setVisibility(View.GONE);}
+        if(mP_lep.getInt("AMAX",0) == -2){linLayAst.setVisibility(View.GONE);tv_ast.setVisibility(View.GONE);}
     }
 
     void exec(View v, Integer i){

@@ -25,7 +25,7 @@ public class DiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dice);
 
-        this.setTitle(R.string.TitleDice);
+        this.setTitle("\uD83C\uDFB2 " + getResources().getString(R.string.TitleDice));
 
         //Start connectors
         final Button but_d3 = findViewById(R.id.but_d3);
@@ -41,45 +41,44 @@ public class DiceActivity extends AppCompatActivity {
         txt_results.setMovementMethod(new ScrollingMovementMethod());
         rand = new Random();
 
-        but_d3.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) { fadeOutAndHideImage(but_d3,3,1); }});
-        but_d4.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) {  fadeOutAndHideImage(but_d4,4,1);  }});
-        but_d6.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) {  fadeOutAndHideImage(but_d6,6,1);  }});
-        but_d8.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) {  fadeOutAndHideImage(but_d8,8,1);  }});
-        but_d10.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) {  fadeOutAndHideImage(but_d10,10,1);  }});
-        but_d1010.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) {  fadeOutAndHideImage(but_d1010,1010,1);  }});
-        but_d12.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) {  fadeOutAndHideImage(but_d12,12,1);  }});
-        but_d20.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) {  fadeOutAndHideImage(but_d20,20,1);  }});
-        but_d100.setOnClickListener(new Button.OnClickListener() {public void onClick(View V) {  fadeOutAndHideImage(but_d100,100,1);  }});
-
+        but_d3.setOnClickListener(V -> fadeOutAndHideImage(but_d3,3,1));
+        but_d4.setOnClickListener(V -> fadeOutAndHideImage(but_d4,4,1));
+        but_d6.setOnClickListener(V -> fadeOutAndHideImage(but_d6,6,1));
+        but_d8.setOnClickListener(V -> fadeOutAndHideImage(but_d8,8,1));
+        but_d10.setOnClickListener(V -> fadeOutAndHideImage(but_d10,10,1));
+        but_d1010.setOnClickListener(V -> fadeOutAndHideImage(but_d1010,1010,1));
+        but_d12.setOnClickListener(V -> fadeOutAndHideImage(but_d12,12,1));
+        but_d20.setOnClickListener(V -> fadeOutAndHideImage(but_d20,20,1));
+        but_d100.setOnClickListener(V -> fadeOutAndHideImage(but_d100,100,1));
 
         //LongClickListener
-        but_d3.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) {
+        but_d3.setOnLongClickListener(v -> {
             fadeOutAndHideImage(but_d3,3,3);
-            return true;}});
-        but_d4.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) {
+            return true;});
+        but_d4.setOnLongClickListener(v -> {
             fadeOutAndHideImage(but_d20,4,3);
-            return true;}});
-        but_d6.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) {
+            return true;});
+        but_d6.setOnLongClickListener(v -> {
             fadeOutAndHideImage(but_d6,6,3);
-            return true;}});
-        but_d8.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) {
+            return true;});
+        but_d8.setOnLongClickListener(v -> {
             fadeOutAndHideImage(but_d8,8,3);
-            return true;}});
-        but_d10.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) {
+            return true;});
+        but_d10.setOnLongClickListener(v -> {
             fadeOutAndHideImage(but_d10,10,3);
-            return true;}});
-        but_d1010.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) {
+            return true;});
+        but_d1010.setOnLongClickListener(v -> {
             fadeOutAndHideImage(but_d1010,100,3);
-            return true;}});
-        but_d12.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) {
+            return true;});
+        but_d12.setOnLongClickListener(v -> {
             fadeOutAndHideImage(but_d12,12,3);
-            return true;}});
-        but_d20.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) {
+            return true;});
+        but_d20.setOnLongClickListener(v -> {
             fadeOutAndHideImage(but_d20,20,3);
-            return true;}});
-        but_d100.setOnLongClickListener(new View.OnLongClickListener() {@Override public boolean onLongClick(View v) {
+            return true;});
+        but_d100.setOnLongClickListener(v -> {
             fadeOutAndHideImage(but_d100,100,3);
-            return true;}});
+            return true;});
 
     }
 

@@ -5,6 +5,7 @@
     <color name="colorAccent">#c9006b</color>
 
 
+    <color name="HP_5">#00000000</color>
     <color name="HP_4">#ff000000</color>
     <color name="HP_3">#ff001f</color>
     <color name="HP_2">#873080</color>
