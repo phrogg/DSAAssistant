@@ -20,6 +20,13 @@ public class MoneyActivity extends AppCompatActivity {
     SharedPreferences mPrefs;
     Boolean activ = true;
 
+    enum Money {
+        Dukaten,
+        Silber,
+        Heller,
+        Kreuzer
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +38,7 @@ public class MoneyActivity extends AppCompatActivity {
         this.setTitle("⚖️ " + getResources().getString(R.string.TitleMoney));
 
         //Define Start Values
-        
+
         but_duk_m = findViewById(R.id.but_duk_m);
         but_duk_p = findViewById(R.id.but_duk_p);
         but_sil_m = findViewById(R.id.but_sil_m);
@@ -70,21 +77,23 @@ public class MoneyActivity extends AppCompatActivity {
         sb_kre.setMax(mPrefs.getInt("KRE",0)+20);
         sb_kre.setProgress(mPrefs.getInt("KRE",0));
         tv_kre.setText("Kreuzer " + "(" + sb_kre.getProgress() + ")");
-        sb_sch.setMax(3);
+        sb_sch.setMax(10);
         sb_sch.setProgress(mPrefs.getInt("SCH",0));
         tv_sch.setText("Schicksals P. " + "(" + sb_sch.getProgress() + ")");
 
+        // binding
+        but_duk_m.setOnClickListener(V -> { changeMoneyValue(Money.Dukaten,-1); });
+        but_duk_p.setOnClickListener(V -> { changeMoneyValue(Money.Dukaten,1); });
 
+        but_sil_m.setOnClickListener(V -> { changeMoneyValue(Money.Silber,-1); });
+        but_sil_p.setOnClickListener(V -> { changeMoneyValue(Money.Silber,1); });
 
-        //Real "Coding"
-        but_duk_m.setOnClickListener(V -> { sb_duk.setProgress(sb_duk.getProgress()-1);saveVals(); });
-        but_duk_p.setOnClickListener(V -> { sb_duk.setProgress(sb_duk.getProgress()+1);saveVals(); });
-        but_hel_m.setOnClickListener(V -> { sb_hel.setProgress(sb_hel.getProgress()-1);saveVals(); });
-        but_hel_p.setOnClickListener(V -> { sb_hel.setProgress(sb_hel.getProgress()+1);saveVals(); });
-        but_kre_m.setOnClickListener(V -> { sb_kre.setProgress(sb_kre.getProgress()-1);saveVals(); });
-        but_kre_p.setOnClickListener(V -> { sb_kre.setProgress(sb_kre.getProgress()+1);saveVals(); });
-        but_sil_p.setOnClickListener(V -> { sb_sil.setProgress(sb_sil.getProgress()+1);saveVals(); });
-        but_sil_m.setOnClickListener(V -> { sb_sil.setProgress(sb_sil.getProgress()-1);saveVals(); });
+        but_hel_m.setOnClickListener(V -> { changeMoneyValue(Money.Heller,-1); });
+        but_hel_p.setOnClickListener(V -> { changeMoneyValue(Money.Heller,1); });
+
+        but_kre_m.setOnClickListener(V -> { changeMoneyValue(Money.Kreuzer,-1); });
+        but_kre_p.setOnClickListener(V -> { changeMoneyValue(Money.Kreuzer,1); });
+
         but_sch_m.setOnClickListener(V -> { sb_sch.setProgress(sb_sch.getProgress()-1);saveVals(); });
         but_sch_p.setOnClickListener(V -> { sb_sch.setProgress(sb_sch.getProgress()+1);saveVals(); });
 
@@ -183,6 +192,36 @@ public class MoneyActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void changeMoneyValue(Money money, int amount) {
+        switch(money){
+            case Dukaten:
+                if(sb_duk.getProgress() + amount > sb_duk.getMax()){
+                    sb_duk.setMax(sb_duk.getMax()+amount);
+                }
+                sb_duk.setProgress(sb_duk.getProgress()+amount);saveVals();
+                break;
+            case Silber:
+                if(sb_sil.getProgress() + amount > sb_sil.getMax()){
+                    sb_sil.setMax(sb_sil.getProgress()+amount);
+                }
+                sb_sil.setProgress(sb_sil.getProgress()+amount);saveVals();
+                break;
+            case Kreuzer:
+                if(sb_kre.getProgress() + amount > sb_kre.getMax()){
+                    sb_kre.setMax(sb_kre.getProgress()+amount);
+                }
+                sb_kre.setProgress(sb_kre.getProgress()+amount);saveVals();
+                break;
+            case Heller:
+                if(sb_hel.getProgress() + amount > sb_hel.getMax()){
+                    sb_hel.setMax(sb_hel.getProgress()+amount);
+                }
+                sb_hel.setProgress(sb_hel.getProgress()+amount);saveVals();
+                break;
+        }
+        saveVals();
     }
 
     void dialog(final int in, final int out, final int mul) {
